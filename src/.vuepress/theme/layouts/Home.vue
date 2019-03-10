@@ -1,6 +1,28 @@
 <template>
-  <div class="home">
-    <div class="hero">
+  <div class="w-full bg-white">
+    <div class="fixed pin h-full z-0">
+      <img
+        v-if="data.heroImage"
+        :src="$withBase(data.heroImage)"
+        alt="The Foreign Architect"
+        class="h-full w-full"
+      >
+    </div>
+    <section id="hero" class="relative h-screen flex items-end w-full">
+      <div class="z-20 relative pb-16 w-2/3 px-8 pt-8 container mx-auto bg-white">
+        <h1
+          class="font-logo mb-2 uppercase font-bold tracking-wide"
+        >{{ data.heroText || $title || 'Hello' }}</h1>
+        <p
+          class="leading-normal font-serif text-lg"
+        >{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
+        <a
+          href="#guides"
+          class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white no-underline hover:bg-blue-dark mt-6 p-2 rounded-sm"
+        >{{data.actionText}}</a>
+      </div>
+    </section>
+    <!-- <div class="hero">
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
 
       <h1>{{ data.heroText || $title || 'Hello' }}</h1>
@@ -10,27 +32,42 @@
       <p class="action" v-if="data.actionText && data.actionLink">
         <NavLink class="action-button" :item="actionLink"/>
       </p>
-    </div>
+    </div>-->
+    <!--
 
-    <div class="features" v-if="data.features && data.features.length">
-      <div class="feature" v-for="(feature, index) in data.features" :key="index">
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
+      <div
+        class="relative z-30 w-2/3 mx-auto bg-white pt-16 px-6"
+        v-if="data.features && data.features.length"
+      >
+        <div class v-for="(feature, index) in data.features" :key="index">
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.details }}</p>
+        </div>
+      </div>
+
+    -->
+    <div class="relative w-full bg-white">
+      <div class="w-2/3 mx-auto px-8 pt-16">
+        <nav-links/>
+
+        <home-about :profileImage="data.profileImage"/>
+
+        <home-guides :guides="data.guides"/>
+
+        <home-map :map="data.map"/>
+
+        <home-blog/>
       </div>
     </div>
-
-    <Content custom/>
-
-    <div class="footer" v-if="data.footer">{{ data.footer }}</div>
   </div>
 </template>
 
 <script>
-import NavLink from "../components/NavLink.vue";
+import NavLinks from '../components/NavLinks.vue';
 
 export default {
   components: {
-    NavLink
+    NavLinks,
   },
 
   computed: {
@@ -41,171 +78,13 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText
+        text: this.data.actionText,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="stylus">
-@import '../styles/config.styl';
-
-.home {
-  padding: $navbarHeight 2rem 0;
-  max-width: 960px;
-  margin: 0px auto;
-
-  .hero {
-    text-align: center;
-
-    img {
-      max-height: 280px;
-      display: block;
-      margin: 3rem auto 0;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 1rem auto 0;
-    }
-
-    .action {
-      margin: 1.8rem auto;
-    }
-
-    .description {
-      max-width: 35rem;
-      margin: 1rem auto 0;
-      font-size: 1.6rem;
-      line-height: 1.3;
-      color: lighten($textColor, 40%);
-    }
-
-    .action-button {
-      display: inline-block;
-      font-size: 1.2rem;
-      color: #fff;
-      background-color: $accentColor;
-      padding: 0.8rem 1.6rem;
-      border-radius: 4px;
-      transition: background-color 0.1s ease;
-      box-sizing: border-box;
-      border-bottom: 1px solid darken($accentColor, 10%);
-
-      &:hover {
-        background-color: lighten($accentColor, 10%);
-      }
-    }
-  }
-
-  .features {
-    border-top: 1px solid $borderColor;
-    border-bottom: 1px solid $borderColor;
-    padding: 1.2rem 0;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: stretch;
-    justify-content: space-between;
-  }
-
-  .feature {
-    flex-grow: 1;
-    flex-basis: 30%;
-    max-width: 30%;
-
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      border-bottom: none;
-      padding-bottom: 0;
-      color: lighten($textColor, 10%);
-    }
-
-    p {
-      color: lighten($textColor, 25%);
-    }
-  }
-
-  .footer {
-    padding: 2.5rem;
-    border-top: 1px solid $borderColor;
-    text-align: center;
-    color: lighten($textColor, 25%);
-  }
-}
-
-.subscribe {
-  margin: 0 auto;
-  padding: 3rem 0;
-
-  &__title {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
-  }
-}
-
-@media (min-width: $MQMobile) {
-}
-
-@media (min-width: $MQMobileNarrow) {
-  .subscribe {
-    max-width: 60%;
-  }
-}
-
-@media (max-width: $MQMobile) {
-  .home {
-    .features {
-      flex-direction: column;
-    }
-
-    .feature {
-      max-width: 100%;
-      padding: 0 1rem;
-    }
-  }
-}
-
-@media (max-width: $MQMobileNarrow) {
-  .home {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-    .hero {
-      img {
-        max-height: 210px;
-        margin: 2rem auto 1.2rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h1, .description, .action {
-        margin: 1.2rem auto;
-      }
-
-      .description {
-        font-size: 1.2rem;
-      }
-
-      .action-button {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-      }
-    }
-
-    .feature {
-      h2 {
-        font-size: 1.25rem;
-      }
-    }
-  }
-}
+<style scoped>
 </style>
+

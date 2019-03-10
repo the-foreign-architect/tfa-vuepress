@@ -3,26 +3,25 @@ module.exports = {
   dest: './public',
   themeConfig: {
     domain: 'https://theforeignarchitect.com',
-    repo: 'https://github.com/danrocha/tfa.git',
-    repoLabel: 'Repo',
-    docsDir: 'src',
-    editLinks: true,
     logo: '/TFA_monogram.png',
     lastUpdated: 'Last Updated',
-    editLinkText: 'Open a new issue',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/index.html' },
       { text: 'City Guides', link: '/learn/index.html' },
-      {
+      { text: 'Blog', link: '/blog/index.html' },
+      /* {
         text: 'About',
         items: [
           { text: 'Me', link: '/about/index.html' },
           { text: 'Uses', link: '/uses/index.html' },
           { text: 'Media Log', link: '/about/media-log/index.html' }
         ]
+      }, */
+      {
+        text: 'About',
+        link: '/about/'
       },
-      { text: 'Contact', link: '/contact/index.html' }
+      { text: 'Newsletter', link: '/contact/index.html' }
     ],
     user: {
       socialMedia: [
@@ -33,12 +32,20 @@ module.exports = {
         }
       ]
     }
-	},
-	postcss: {
-    plugins: [
-      require("tailwindcss")("./tailwind.config.js"),
-      require("autoprefixer")
-    ]
+  },
+  markdown: {
+    anchor: {
+      permalinkSymbol: ''
+    },
+    toc: {
+      includeLevel:[2]
+    },
+    config: md => {
+      md.use(require('markdown-it-container'), 'about')
+    }
+  },
+  postcss: {
+    plugins: require('./plugins')
   },
   plugins: [
     [
@@ -59,14 +66,7 @@ module.exports = {
     'vuepress-plugin-janitor'
   ],
   head: [
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=PT+Serif:400,700|Poppins:500,700'
-      }
-    ],
+
     [
       'link',
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' }

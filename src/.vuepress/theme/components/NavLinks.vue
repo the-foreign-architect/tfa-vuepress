@@ -1,13 +1,16 @@
 <template>
-  <nav class="flex items-center" v-if="userLinks.length || repoLink">
+  <nav
+    class="flex items-center uppercase tracking-wide justify-center"
+    v-if="userLinks.length || repoLink"
+  >
     <!-- user links -->
     <div class="px-4" v-for="item in userLinks" :key="item.link">
       <DropdownLink v-if="item.type === 'links'" :item="item"/>
       <NavLink v-else :item="item"/>
     </div>
     <SearchBox/>
-    <div class="nav-item">
-      <a href="/rss.xml" class="nav-link">
+    <div>
+      <a href="/rss.xml" class="no-underline text-black hover:text-grey-dark">
         <i class="fas fa-rss"></i>
         <span class="sr-only">RSS Feed</span>
       </a>
@@ -16,10 +19,10 @@
 </template>
 
 <script>
-import DropdownLink from "./DropdownLink.vue";
-import { resolveNavLinkItem } from "../mixins/util";
-import NavLink from "./NavLink.vue";
-import SearchBox from "./SearchBox.vue";
+import DropdownLink from './DropdownLink.vue';
+import { resolveNavLinkItem } from '../mixins/util';
+import NavLink from './NavLink.vue';
+import SearchBox from './SearchBox.vue';
 
 export default {
   components: { NavLink, DropdownLink, SearchBox },
@@ -36,7 +39,7 @@ export default {
         const routes = this.$router.options.routes;
         const themeLocales = this.$site.themeConfig.locales || {};
         const languageDropdown = {
-          text: this.$themeLocaleConfig.selectText || "Languages",
+          text: this.$themeLocaleConfig.selectText || 'Languages',
           items: Object.keys(locales).map(path => {
             const locale = locales[path];
             const text =
@@ -54,7 +57,7 @@ export default {
               }
             }
             return { text, link };
-          })
+          }),
         };
         return [...this.userNav, languageDropdown];
       }
@@ -64,11 +67,11 @@ export default {
     userLinks() {
       return (this.nav || []).map(link => {
         return Object.assign(resolveNavLinkItem(link), {
-          items: (link.items || []).map(resolveNavLinkItem)
+          items: (link.items || []).map(resolveNavLinkItem),
         });
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

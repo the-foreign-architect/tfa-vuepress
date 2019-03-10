@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="flex-1"
+    class="flex-1 link"
     :to="link"
     v-if="!isExternal(link) && !isXml(link)"
     :exact="exact"
@@ -8,7 +8,7 @@
   <a
     v-else
     :href="link"
-    class="flex-1"
+    class="flex-1 link"
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
     :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
   >
@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import { isExternal, isMailto, isTel, isXml, ensureExt } from "../mixins/util";
+import { isExternal, isMailto, isTel, isXml, ensureExt } from '../mixins/util';
 
 export default {
   props: {
     item: {
-      required: true
-    }
+      required: true,
+    },
   },
 
   computed: {
@@ -39,14 +39,14 @@ export default {
         );
       }
       return true;
-    }
+    },
   },
 
   methods: {
     isExternal,
     isMailto,
     isTel,
-    isXml
-  }
+    isXml,
+  },
 };
 </script>

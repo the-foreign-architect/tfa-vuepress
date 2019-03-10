@@ -1,16 +1,31 @@
 ---
 home: true
-heroImage: /bencodezen-logo.png
+navbar: false
+heroImage: /images/hero/hero01.jpg
+profileImage: /images/danieldarocha-beijing.jpg
 heroText: The Foreign Architect
-tagline: Explore Contemporary Architecture
-actionText: Read the latest →
-actionLink: /blog/
-features:
-  - title: Consulting
-    details: I provide web development services across the spectrum. From taking design comps and creating a design system with modular & scalable CSS architecture to building single page applications with Vue.js.
-  - title: Speaking
-    details: I have spoken on various topics on web development and best practices. I'm always creating new topics as well, so please reach out if you'd like me to speak at your event!
-  - title: Training & Workshops
-    details: I have experience teaching groups of various sizes and skillsets. Whether it's Vue.js, CSS, or some other topic, I would love to share my knowledge with you and your group!
-footer: © BenCodeZen 2019. Made with VuePress.
+tagline: Travel to experience great contemporary architecture throughout the world.
+actionText: Go Explore →
+guides:
+  - city: Abu Dhabi
+    link: /guides/abu-dhabi/
+  - city: Dubai
+    link: /guides/dubai/
+  - city: Seoul
+    link: /guides/seoul/
+  - city: Lisbon
+    link: /guides/lisbon/
+  - city: Hong Kong
+    link: /guides/hong-kong/
+  - city: Berlin
+    link: /guides/berlin/
+map: mapLink
 ---
+
+## What's this?
+
+testing the custom containers
+
+## Architecture City Guides
+
+This are city guides.

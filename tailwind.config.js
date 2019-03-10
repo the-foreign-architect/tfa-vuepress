@@ -195,6 +195,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Source Sans Pro',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -209,6 +210,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Merriweather',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -228,6 +230,9 @@ module.exports = {
       'Courier New',
       'monospace',
     ],
+    'logo': [
+      'Poppins'
+    ]
   },
 
 
