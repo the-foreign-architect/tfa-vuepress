@@ -22,6 +22,7 @@ import Blog from './layouts/Blog.vue';
 import Guide from './layouts/Guide.vue';
 import Footer from './components/Footer.vue';
 import { resolveSidebarItems } from './mixins/util';
+import './styles/main.css';
 
 export default {
   components: { Blog, Guide, Home, Page, Sidebar, Navbar, Footer },
