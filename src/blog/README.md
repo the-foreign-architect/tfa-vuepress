@@ -1,1 +1,1 @@
-BLOG CONTENT HOME
+<BlogPostList :list="$site.pages" />
