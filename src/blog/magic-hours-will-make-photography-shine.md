@@ -7,6 +7,9 @@ tags:
   - Photography
   - Tips
 excerpt: Light plays an essential role on the quality of your photos and the time of the day you choose to make your pictures can be the element that defines their success.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 **Light plays an essential role on the quality of your photos and the time of the day you choose to make your pictures can be the element that defines their success. **Check below how to make the best use of the daylight during the day to bring your photos to the next level.

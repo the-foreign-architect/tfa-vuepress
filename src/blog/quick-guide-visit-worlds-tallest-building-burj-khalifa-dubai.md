@@ -9,6 +9,9 @@ tags:
   - skyscrapers
   - UAE
 excerpt: "I went up the world's tallest building: the Burj Khalifa, in Dubai. Here is a collection of little tips to help you plan your visit."
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 In my quest to visit **tall buildings** all over the world, there was one on top of the list: the mighty **Burj Khalifa**, in Dubai, the tallest building in the world. In 2014 I finally had the chance to visit it during a 2-day layover in Dubai.

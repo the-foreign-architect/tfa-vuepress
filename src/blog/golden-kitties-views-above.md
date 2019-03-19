@@ -1,12 +1,15 @@
 ---
 title: Golden Kitties and views from above
-date: 2018-02-04 08:02:50
+date: 2018-02-04
 type: post
 blog: true
 tags:
   - Misc
   - Weekly-update
 excerpt: This week, Product Hunt delivered their awards, Babish delighted us with another delicious video, and many cool things were pictured from up in the air.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 In today’s post, I am taking a break from architecture because I had too much of it the past days. Architecture can be a bitch of a profession, beating you up and letting you down more often than not. It is tough to keep on believing that what we are doing is ultimately for a greater good and that money is not the only thing that rules the world. Negative thoughts aside, the future is bright and sunny. There are just too many cool things going on in the world, such as:

@@ -8,6 +8,9 @@ tags:
   - Maps
   - Tips
 excerpt: Google Maps is an extremely useful tool to help you before, during and after your trips. This guide will show you how to make the best of it.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 [Google Maps](http://maps.google.com) provides, by far, the best and most comprehensive maps for cities all over the world. It is an extremely useful tool to help you before, during and after your trips. There is a lot you can do with it. I use it all the time, before, during and after the trips. It helps me not only navigate but also catalog places for later reference. My usual workflow is:

@@ -8,6 +8,9 @@ tags:
   - Off-Topic
   - Personal
 excerpt: Quick story about my path until this blog.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 Since my teenage years, I knew I wanted to be an architect. Once that became a reality, **traveling the world** was easily the next goal in line. To live abroad and travel places meant I was to be a foreigner more often than not. Which, to me, was an exciting state in which to find myself. Among all my travels, three specific countries shaped who I am today: **Brazil**, where I was born and lived most of my life; **Germany**, where I truly became and architect; and **China**, where I realized how truly different can people and cultures be.

@@ -7,6 +7,9 @@ tags:
   - Misc
   - Weekly-Update
 excerpt: A beautiful hostel in a renovated in Beijing courtyard home, beautiful photos of an exhibition center in Austria, and new Adidas's shoes making the headlines in Berlin.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 This week was crazy busy at work. It started well with a good amount of tasks to be tackled in a reasonable amount of time. But it quickly escalated to urgency when we suddenly had a new presentation on Friday, another on Sunday, and yet another on Monday. It is a huge project (more than 600.000 sqm!) with a huge team and a lot of politics in the mix. Not easy. Now, Sunday, I am finally able to look back at the week and let you know what has been grabbing my attention in between some Rhino sessions. --

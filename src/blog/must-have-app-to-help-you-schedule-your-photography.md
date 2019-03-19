@@ -8,6 +8,9 @@ tags:
   - Photography
   - Tips
 excerpt: Trying to keep up with the sun schedule while you travel? These apps will help you with that.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 [As I wrote in a previous post](http://theforeignarchitect.com/the-magic-hours-that-will-make-your-photography-shine/), the golden hour and the blue hour can provide amazing light situations for your photos, while the disadvantages of the hard midday light could turn a perfect subject and composition into a bad shot. Therefore, it is essential that you plan some of your travel according to the changes in the daylight. But these can vary wildly between locations and times of the year. In some places the golden hour can last the whole day; in others, the morning golden hour might come way to early making shots impractical. Luckily, several apps and websites can help you keep track of it. These are my personal favorites, tested and approved:

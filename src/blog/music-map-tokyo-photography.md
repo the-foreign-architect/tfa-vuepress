@@ -7,6 +7,9 @@ tags:
   - Misc
   - Weekly-Update
 excerpt: This week we saw the inauguration of a new building in Beijing, an amazing music map, and some eerie nighttime photos of Tokyo.
+sharingHashtags: tfa
+coverImage: v1552238683/guides/abu-dhabi/abu-dhabi-cover.jpg
+permalink: /blog/:slug
 ---
 
 This week was strange. At work, things are going at a weird pace, lots of fragmented information from clients who are not sure what they want. This is a recurring theme which leaves the team and me frustrated: **the lack of constructive criticism from clients**. Mix this with Chinese indirect communication culture, and you can only aim again and hope next time you get the target. Even though it is still pitch dark. Anyway, the internet came to the rescue, and lots of cool things came to my attention these last days. Here are just a few:
