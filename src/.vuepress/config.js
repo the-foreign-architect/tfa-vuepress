@@ -43,10 +43,11 @@ module.exports = {
       md.use(require('markdown-it-container'), 'about');
     },
   },
-  postcss: {
-    plugins: require('./plugins'),
-  },
+  // postcss: {
+  //   plugins: require('./plugins'),
+  // },
   plugins: [
+    ['@silvanite/tailwind'],
     [
       '@vuepress/google-analytics',
       {
