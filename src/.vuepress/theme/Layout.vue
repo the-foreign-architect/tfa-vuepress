@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <Navbar v-if="shouldShowNavbar"/>
     <Blog v-if="$page.frontmatter.blog"/>
-    <Guide v-if="$page.frontmatter.guide"/>
+    <Guide v-else-if="$page.frontmatter.guide"/>
     <Home v-else-if="$page.frontmatter.home"/>
     <Page v-else>
       <slot name="page-top" slot="top"/>
