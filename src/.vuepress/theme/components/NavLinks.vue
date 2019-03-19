@@ -8,7 +8,7 @@
       <DropdownLink v-if="item.type === 'links'" :item="item"/>
       <NavLink v-else :item="item"/>
     </div>
-    <SearchBox/>
+    <!-- <SearchBox/> -->
     <div>
       <a href="/rss.xml" class="no-underline text-black hover:text-grey-dark">
         <i class="fas fa-rss"></i>
