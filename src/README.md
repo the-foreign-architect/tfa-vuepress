@@ -21,11 +21,3 @@ guides:
     link: /guides/berlin/
 map: mapLink
 ---
-
-## What's this?
-
-testing the custom containers
-
-## Architecture City Guides
-
-This are city guides.

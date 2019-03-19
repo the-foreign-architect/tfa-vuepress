@@ -1,0 +1,1 @@
+<GuideList :list="$site.pages" />
