@@ -1,4 +1,7 @@
-<h2>Travel &amp; Architecture</h2>
+# About
+
+## Travel &amp; Architecture
+
 <strong>Traveling always involves architecture.</strong> From sleek glass and steel skyscrapers in large cities to the fisherman’s hut on a paradise beach, architecture is eventually surrounding us almost everywhere we go.
 
 As an architect, I am fascinated by how spaces make you feel, how a building changes a city, how architecture can influence people’s behavior and interactions with each other. If the world is a book, architecture is one of its main characters. And, as the saying goes, those who do not travel read only one page.
