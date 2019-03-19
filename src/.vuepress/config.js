@@ -47,7 +47,9 @@ module.exports = {
   //   plugins: require('./plugins'),
   // },
   plugins: [
-    ['@silvanite/tailwind'],
+    ["@silvanite/tailwind", {
+      purgecss: { enabled: false }
+    }],
     [
       '@vuepress/google-analytics',
       {
