@@ -39,4 +39,51 @@
   hr {
     @apply border-t border-grey-light my-8;
   }
+
+  #custom-content {
+  @apply text-lg leading-normal;
+}
+#custom-content h2 {
+  @apply my-8 font-serif;
+}
+#custom-content h3 {
+  @apply my-8 font-serif;
+}
+#custom-content h4 {
+  @apply mb-4 font-serif;
+}
+#custom-content p {
+  @apply mb-4 text-lg leading-normal;
+}
+#custom-content ul {
+  @apply list-reset my-8;
+}
+#custom-content ul > li {
+  @apply mb-2;
+}
+#custom-content ul > li:before {
+  custom-content: '\2192';
+  @apply text-sm font-bold mr-2;
+}
+#custom-content p + img + em {
+  @apply text-center;
+}
+#custom-content img + em {
+  @apply block text-grey-dark text-sm;
+}
+#custom-content blockquote {
+  @apply italic text-grey-dark pl-8 ml-8 my-8 border-l-4 border-grey;
+}
+.tip.custom-block {
+  @apply bg-grey-lighter text-sm px-8 py-2 mb-8;
+}
+.tip .custom-block-title {
+  @apply hidden;
+}
+.hero-img {
+  max-width: none;
+}
+.hero-header {
+  height: 600px;
+}
 }

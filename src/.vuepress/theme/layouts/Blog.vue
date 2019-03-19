@@ -21,7 +21,11 @@
         </ul>
       </div>
     </header>
-    <main id="guide" role="main" class="container md:w-2/3 mx-auto px-6 md:px-8 flex-grow">
+    <main
+      id="custom-content"
+      role="main"
+      class="blog-content container md:w-2/3 mx-auto px-6 md:px-8 flex-grow"
+    >
       <Content custom/>
     </main>
 
@@ -38,14 +42,10 @@
         />
       </div>
     </section>
-
-    <slot name="bottom"/>
   </div>
 </template>
 
 <script>
-import Footer from '../components/Footer.vue';
-
 import {
   resolvePage,
   normalize,
@@ -54,8 +54,7 @@ import {
 } from '../mixins/util';
 
 export default {
-  name: 'Guide',
-  components: { Footer },
+  name: 'Blog',
 
   computed: {
     coverImageUrl() {
@@ -107,7 +106,7 @@ export default {
     },
   },
 
-  mounted() {
+  /* mounted() {
     let tweets = document.querySelectorAll('.twitter-tweet');
 
     if (tweets && tweets.length > 0) {
@@ -118,7 +117,7 @@ export default {
         tweet.children[0].setAttribute('style', 'display: none;');
       });
     }
-  },
+  }, */
 };
 
 function find(page, items, offset) {
@@ -138,53 +137,6 @@ function find(page, items, offset) {
   }
 }
 </script>
-<style>
-#guide {
-  @apply text-lg leading-normal;
-}
-#guide h2 {
-  @apply my-8 font-serif;
-}
-#guide h3 {
-  @apply my-8 font-serif;
-}
-#guide h4 {
-  @apply mb-4 font-serif;
-}
-#guide p {
-  @apply mb-4 text-lg leading-normal;
-}
-#guide ul {
-  @apply list-reset my-8;
-}
-#guide ul > li {
-  @apply mb-2;
-}
-#guide ul > li:before {
-  content: '\2192';
-  @apply text-sm font-bold mr-2;
-}
-#guide p + img + em {
-  @apply text-center;
-}
-#guide img + em {
-  @apply block text-grey-dark text-sm;
-}
-#guide blockquote {
-  @apply italic text-grey-dark pl-8 ml-8 my-8 border-l-4 border-grey;
-}
-.tip.custom-block {
-  @apply bg-grey-lighter text-sm px-8 py-2 mb-8;
-}
-.tip .custom-block-title {
-  @apply hidden;
-}
-.hero-img {
-  max-width: none;
-}
-.hero-header {
-  height: 600px;
-}
-</style>
+
 
 

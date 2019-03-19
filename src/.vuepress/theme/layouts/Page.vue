@@ -1,9 +1,14 @@
 <template>
-  <div class="page">
+  <div class="-mt-16 pt-16 flex-grow">
+    <main
+      id="custom-content"
+      role="main"
+      class="page-content container md:w-2/3 mx-auto my-8 px-6 md:px-8 flex-grow"
+    >
+      <Content custom/>
+    </main>
+
     <slot name="top"/>
-
-    <Content :custom="false"/>
-
     <slot name="bottom"/>
   </div>
 </template>
@@ -34,6 +39,17 @@ export default {
       return 'Last Updated';
     },
 
+    publishDate() {
+      const dateFormat = new Date(this.$frontmatter.date);
+      const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      };
+
+      return dateFormat.toLocaleDateString(this.$lang, options);
+    },
+
     prev() {
       const prev = this.$page.frontmatter.prev;
       if (prev === false) {
@@ -54,37 +70,6 @@ export default {
       } else {
         return resolveNext(this.$page, this.sidebarItems);
       }
-    },
-
-    editLink() {
-      if (this.$page.frontmatter.editLink === false) {
-        return;
-      }
-      const {
-        repo,
-        editLinks,
-        docsDir = '',
-        docsBranch = 'master',
-        docsRepo = repo,
-      } = this.$site.themeConfig;
-
-      let path = normalize(this.$page.path);
-      if (endingSlashRE.test(path)) {
-        path += 'README.md';
-      } else {
-        path += '.md';
-      }
-      if (docsRepo && editLinks) {
-        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path);
-      }
-    },
-
-    editLinkText() {
-      return (
-        this.$themeLocaleConfig.editLinkText ||
-        this.$site.themeConfig.editLinkText ||
-        `Edit this page`
-      );
     },
   },
 };

@@ -5,8 +5,8 @@
     @click="$router.push(path)"
   >
     <!-- <time class="blog-post__time">{{ formatPublishDate }}</time> -->
-    <h2 class="uppercase bg-white p-1 hover:bg-black">
-      <a :href="path" class="link-clean hover:text-white">{{ city }}</a>
+    <h2 class="uppercase bg-white p-1 hover:bg-black font-sans">
+      <a :href="path" class="font-sans link-clean hover:text-white">{{ city }}</a>
     </h2>
     <!-- <p v-if="excerpt" class="blog-post__excerpt">{{ excerpt }}</p>
     <a class="button blog-post__button" :href="path">Read More ></a>-->
