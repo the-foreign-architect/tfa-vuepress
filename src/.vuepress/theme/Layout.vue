@@ -22,7 +22,6 @@ import Blog from './layouts/Blog.vue';
 import Guide from './layouts/Guide.vue';
 import Footer from './components/Footer.vue';
 import { resolveSidebarItems } from './mixins/util';
-import './styles/main.css';
 
 export default {
   components: { Blog, Guide, Home, Page, Sidebar, Navbar, Footer },
@@ -56,36 +55,10 @@ export default {
   },
 };
 </script>
-<style>
-body,
-html {
-  @apply text-black font-sans w-full h-full;
-}
-a {
-  @apply no-underline;
-  @apply text-black;
-  box-shadow: inset 0 -0.5em 0 #dae1e7;
-  transition: box-shadow 0.2s ease-in-out;
-}
-a:hover {
-  box-shadow: inset 0 -0.1em 0 #dae1e7;
-}
-a.link-dark {
-  @apply text-white;
-  box-shadow: inset 0 -0.5em 0 #3d4852;
-}
-a.link-dark:hover {
-  box-shadow: inset 0 -0.1em 0 #3d4852;
-}
 
-a.link-clean {
-  box-shadow: none;
-}
-a.link-dark:hover {
-  box-shadow: none;
-}
-hr {
-  @apply border-t border-grey-light my-8;
-}
+<style lang="stylus">
+@import './styles/theme.styl';
 </style>
+
+
 

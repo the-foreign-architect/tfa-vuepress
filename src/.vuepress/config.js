@@ -46,10 +46,14 @@ module.exports = {
   // postcss: {
   //   plugins: require('./plugins'),
   // },
+  postcss: {
+    plugins: [
+      require("tailwindcss")("./tailwind.config.js"),
+      require("autoprefixer")
+    ]
+  },
   plugins: [
-    ["@silvanite/tailwind", {
-      purgecss: { enabled: false }
-    }],
+
     [
       '@vuepress/google-analytics',
       {

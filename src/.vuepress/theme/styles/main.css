@@ -7,7 +7,7 @@
  *
  * If using `postcss-import`, use this import instead:
  *
- * @import "tailwindcss/preflight";
+ @import 'tailwindcss/preflight';
  */
 @tailwind preflight;
 
@@ -16,7 +16,7 @@
  *
  * If using `postcss-import`, use this import instead:
  *
- * @import "tailwindcss/components";
+ @import 'tailwindcss/components';
  */
 @tailwind components;
 
@@ -42,7 +42,7 @@
  *
  * If using `postcss-import`, use this import instead:
  *
- * @import "tailwindcss/utilities";
+ @import 'tailwindcss/utilities';
  */
 @tailwind utilities;
 
