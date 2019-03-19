@@ -10,6 +10,7 @@ if (process.env.NODE_ENV === 'production') {
         '.vuepress/theme/**/*.js',
         '.vuepress/theme/templates/*.html',
         '.vuepress/theme/styles/*.css',
+        '.vuepress/components/*.vue'
       ],
 
       extractors: [
