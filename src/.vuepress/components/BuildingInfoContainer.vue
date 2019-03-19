@@ -5,14 +5,6 @@
   </div>
 </template>
 <script>
-import gql from 'graphql-tag';
-import ApolloClient from 'apollo-boost';
-const apolloClient = new ApolloClient({
-  // You should use an absolute URL here
-  uri: 'http://localhost:3000/graphql',
-});
-import { buildingById } from '../graphql/BuildingInfo';
-
 export default {
   props: {
     id: {
@@ -26,6 +18,15 @@ export default {
     };
   },
   beforeMount() {
+    const { gql } = require('graphql-tag');
+    const { ApolloClient } = require('apollo-client');
+    const { HttpLink } = require('apollo-link-http');
+    const { InMemoryCache } = require('apollo-cache-inmemory');
+    const apolloClient = new ApolloClient({
+      link: new HttpLink({ uri: 'http://localhost:3000/graphql' }),
+      cache: new InMemoryCache(),
+    });
+    const { buildingById } = require('../graphql/BuildingInfo');
     apolloClient
       .query({
         query: buildingById,

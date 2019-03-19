@@ -1,59 +1,51 @@
 <template>
-  <div class="blog">
-    <div class="blog__header">
-      <p class="publish-date">
-        <time :datetime="$frontmatter.date">{{ publishDate }}</time>
-      </p>
-      <h1 class="blog__title">{{ $page.title }}</h1>
-    </div>
-
-    <Content custom/>
-
-    <section class="share">
-      <h2>Share</h2>
-      <a
-        class="share__button"
-        :href="`https://twitter.com/intent/tweet?text=${urlPostTitle} by @bencodezen ${$themeConfig.domain}${$page.path}`"
-        target="_blank"
+  <div class="-mt-16 pt-16 flex-grow">
+    <header class="hero-header mb-8 md:mb-16 flex flex-col md:flex-row border-b border-grey-light">
+      <div
+        class="w-full md:w-1/2 overflow-hidden flex items-center justify-center flex-row flex-no-wrap relative"
       >
-        <i class="fab fa-twitter"></i> Tweet
-      </a>
+        <img :src="coverImageUrl" class="hero-img min-h-full max-h-full flex-shrink">
+      </div>
+      <div class="px-6 bg-white md:w-1/2 my-auto">
+        <p class="uppercase leading-loose mb-2 text-grey-dark">
+          <time :datetime="$frontmatter.date">{{ publishDate }}</time>
+        </p>
+        <h1 class="font-serif text-4xl mb-2">{{ $page.title }}</h1>
+        <p class="font-serif text-xl leading-normal mb-4">{{$frontmatter.excerpt}}</p>
+        <ul class="list-reset flex justify-start">
+          <li
+            v-for="tag in $frontmatter.tags"
+            :key="tag"
+            class="uppercase mr-4 text-grey-dark leading-loose text-sm"
+          >#{{tag}}</li>
+        </ul>
+      </div>
+    </header>
+    <main id="guide" role="main" class="container md:w-2/3 mx-auto px-6 md:px-8 flex-grow">
+      <Content custom/>
+    </main>
+
+    <section class="w-full bg-grey-lightest py-8 mt-8">
+      <div class="container md:w-2/3 mx-auto px-6 md:px-8 flex-grow">
+        <h3 class="mb-4">Share</h3>
+        <social-sharing-container
+          :url="$themeConfig.domain+$page.path"
+          :title="$page.title"
+          :description="$page.excerpt"
+          :hashtags="'architecture,'+$frontmatter.sharingHashtags"
+          twitter-user="theforeignarch"
+          :media="$frontmatter.pinterestMedia"
+        />
+      </div>
     </section>
-
-    <div class="page-edit">
-      <div class="edit-link" v-if="editLink">
-        <a
-          href="https://github.com/bencodezen/bencodezen/issues/new"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ editLinkText }}
-          <OutboundLink/>
-        </a>
-      </div>
-      <div class="last-updated" v-if="lastUpdated">
-        <span class="prefix">{{ lastUpdatedText }}:</span>
-        <time class="time" :datetime="$page.lastUpdated">{{ lastUpdated }}</time>
-      </div>
-    </div>
-
-    <div class="page-nav" v-if="prev || next">
-      <p class="inner">
-        <span v-if="prev" class="prev">←
-          <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
-        </span>
-        
-        <span v-if="next" class="next">
-          <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>→
-        </span>
-      </p>
-    </div>
 
     <slot name="bottom"/>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
+
 import {
   resolvePage,
   normalize,
@@ -62,9 +54,16 @@ import {
 } from '../mixins/util';
 
 export default {
-  name: 'Blog',
+  name: 'Guide',
+  components: { Footer },
 
   computed: {
+    coverImageUrl() {
+      return (
+        'https://res.cloudinary.com/tfa/image/upload/c_scale,g_center,w_2000/' +
+        this.$frontmatter.coverImage
+      );
+    },
     lastUpdated() {
       if (this.$page.lastUpdated) {
         const dateFormat = new Date(this.$page.lastUpdated);
@@ -92,59 +91,6 @@ export default {
       return 'Last Updated';
     },
 
-    prev() {
-      const prev = this.$page.frontmatter.prev;
-      if (prev === false) {
-        return;
-      } else if (prev) {
-        return resolvePage(this.$site.pages, prev, this.$route.path);
-      } else {
-        return resolvePrev(this.$page, this.sidebarItems);
-      }
-    },
-
-    next() {
-      const next = this.$page.frontmatter.next;
-      if (next === false) {
-        return;
-      } else if (next) {
-        return resolvePage(this.$site.pages, next, this.$route.path);
-      } else {
-        return resolveNext(this.$page, this.sidebarItems);
-      }
-    },
-
-    editLink() {
-      if (this.$page.frontmatter.editLink === false) {
-        return;
-      }
-      const {
-        repo,
-        editLinks,
-        docsDir = '',
-        docsBranch = 'master',
-        docsRepo = repo,
-      } = this.$site.themeConfig;
-
-      let path = normalize(this.$page.path);
-      if (endingSlashRE.test(path)) {
-        path += 'README.md';
-      } else {
-        path += '.md';
-      }
-      if (docsRepo && editLinks) {
-        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path);
-      }
-    },
-
-    editLinkText() {
-      return (
-        this.$themeLocaleConfig.editLinkText ||
-        this.$site.themeConfig.editLinkText ||
-        `Edit this page`
-      );
-    },
-
     publishDate() {
       const dateFormat = new Date(this.$frontmatter.date);
       const options = {
@@ -161,33 +107,6 @@ export default {
     },
   },
 
-  methods: {
-    createEditLink(repo, docsRepo, docsDir, docsBranch, path) {
-      const bitbucket = /bitbucket.org/;
-      if (bitbucket.test(repo)) {
-        const base = outboundRE.test(docsRepo) ? docsRepo : repo;
-        return (
-          base.replace(endingSlashRE, '') +
-          `/${docsBranch}` +
-          (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-          path +
-          `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
-        );
-      }
-
-      const base = outboundRE.test(docsRepo)
-        ? docsRepo
-        : `https://github.com/${docsRepo}`;
-
-      return (
-        base.replace(endingSlashRE, '') +
-        `/edit/${docsBranch}` +
-        (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-        path
-      );
-    },
-  },
-
   mounted() {
     let tweets = document.querySelectorAll('.twitter-tweet');
 
@@ -201,14 +120,6 @@ export default {
     }
   },
 };
-
-function resolvePrev(page, items) {
-  return find(page, items, -1);
-}
-
-function resolveNext(page, items) {
-  return find(page, items, 1);
-}
 
 function find(page, items, offset) {
   const res = [];
@@ -227,5 +138,53 @@ function find(page, items, offset) {
   }
 }
 </script>
+<style>
+#guide {
+  @apply text-lg leading-normal;
+}
+#guide h2 {
+  @apply my-8 font-serif;
+}
+#guide h3 {
+  @apply my-8 font-serif;
+}
+#guide h4 {
+  @apply mb-4 font-serif;
+}
+#guide p {
+  @apply mb-4 text-lg leading-normal;
+}
+#guide ul {
+  @apply list-reset my-8;
+}
+#guide ul > li {
+  @apply mb-2;
+}
+#guide ul > li:before {
+  content: '\2192';
+  @apply text-sm font-bold mr-2;
+}
+#guide p + img + em {
+  @apply text-center;
+}
+#guide img + em {
+  @apply block text-grey-dark text-sm;
+}
+#guide blockquote {
+  @apply italic text-grey-dark pl-8 ml-8 my-8 border-l-4 border-grey;
+}
+.tip.custom-block {
+  @apply bg-grey-lighter text-sm px-8 py-2 mb-8;
+}
+.tip .custom-block-title {
+  @apply hidden;
+}
+.hero-img {
+  max-width: none;
+}
+.hero-header {
+  height: 600px;
+}
+</style>
 
 
