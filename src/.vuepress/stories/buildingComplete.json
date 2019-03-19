@@ -1,0 +1,81 @@
+{
+  "data": {
+    "buildingById": {
+      "name": "Capital Gate Tower",
+      "website": "https: //www.rmjm.com/",
+      "year": 2010,
+      "address": "",
+      "gfa": "53100",
+      "gmapsEmbed": "!1m14!1m8!1m3!1d7265.854778725701!2d54.434631!3d24.41859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e4275f13979ff%3A0x6c6360b6d7dc1f28!2sCapital+Gate+-+Abu+Dhabi+-+United+Arab+Emirates!5e0!3m2!1sen!2sjp!4v1507467275317",
+      "gmapsLink": "https: //goo.gl/maps/jhdZKkHf84C2",
+      "height": "165",
+      "lat": 24.4187,
+      "lng": 54.4347,
+      "typology": "Hotel, Office",
+      "architectBuildings": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "architect": {
+              "id": 68,
+              "name": "RMJM",
+              "website": "https: //www.rmjm.com",
+              "__typename": "Architect"
+            },
+            "__typename": "ArchitectBuilding"
+          }
+        ],
+        "__typename": "ArchitectBuildingsConnection"
+      },
+      "city": {
+        "country": {
+          "id": 2,
+          "iso": "UAE",
+          "name": "United Arab Emirates",
+          "__typename": "Country"
+        },
+        "id": 2,
+        "name": "Abu Dhabi",
+        "__typename": "City"
+      },
+      "links": {
+        "totalCount": 3,
+        "nodes": [
+          {
+            "id": 299,
+            "title": "The Skyscraper Center",
+            "url": "https: //skyscrapercenter.com/building/capital-gate-tower/3172",
+            "source": {
+              "id": 11,
+              "name": "The Skyscraper Center",
+              "website": "https: //www.skyscrapercenter.com/",
+              "__typename": "LinkSource"
+            },
+            "__typename": "Link"
+          },
+          {
+            "id": 300,
+            "title": "Archdaily",
+            "url": "http: //www.archdaily.com/23431/in-progress-capital-gate-by-rmjm-most-leaning-building-in-the-world",
+            "source": {
+              "id": 1,
+              "name": "ArchDaily",
+              "website": "http: //www.archdaily.com",
+              "__typename": "LinkSource"
+            },
+            "__typename": "Link"
+          },
+          {
+            "id": 302,
+            "title": "RMJM project page",
+            "url": "https: //www.rmjm.com/portfolio/capital-gate-adnec-development-phase-3-abu-dhabi/",
+            "source": null,
+            "__typename": "Link"
+          }
+        ],
+        "__typename": "LinksConnection"
+      },
+      "__typename": "Building"
+    }
+  }
+}
