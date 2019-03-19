@@ -1,10 +1,10 @@
 <template>
-  <nav
-    class="flex items-center uppercase tracking-wide justify-center"
-    v-if="userLinks.length || repoLink"
+  <div
+    class="flex items-end lg:items-center flex-col lg:flex-row uppercase tracking-wide lg:justify-center"
+    v-if="userLinks.length"
   >
     <!-- user links -->
-    <div class="px-4" v-for="item in userLinks" :key="item.link">
+    <div class="py-1 lg:py-0 lg:px-4" v-for="item in userLinks" :key="item.link">
       <DropdownLink v-if="item.type === 'links'" :item="item"/>
       <NavLink v-else :item="item"/>
     </div>
@@ -12,10 +12,10 @@
     <div>
       <a href="/rss.xml" class="no-underline text-black hover:text-grey-dark">
         <i class="fas fa-rss"></i>
-        <span class="sr-only">RSS Feed</span>
+        <span class="lg:hidden">RSS Feed</span>
       </a>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>

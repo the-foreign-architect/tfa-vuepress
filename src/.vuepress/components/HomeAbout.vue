@@ -1,8 +1,8 @@
 <template>
   <section id="about">
     <home-title>What's this?</home-title>
-    <div class="flex">
-      <div class="w-1/3">
+    <div class="flex flex-col justify-center md:flex-row">
+      <div class="w-1/2 mx-auto mb-6 md:w-1/3">
         <img
           :src="$withBase(profileImage)"
           height="400"
@@ -10,7 +10,7 @@
           class="rounded"
         >
       </div>
-      <div class="w-2/3 pl-6 text-lg">
+      <div class="md:w-2/3 md:pl-6 text-lg">
         <p
           class="mb-6"
         >Hi! My name is Daniel and I am an architect. I am also crazy about traveling to see and experience architecture around the world.</p>

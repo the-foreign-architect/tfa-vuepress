@@ -1,24 +1,36 @@
 <template>
-  <header class="h-8 flex justify-between items-center p-8 border-b border-black">
-    <!-- <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/> -->
-    <router-link :to="$localePath" class="no-underline text-black">
-      <!-- <img
-        class="h-12"
-        v-if="$site.themeConfig.logo"
-        :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
-      >-->
-      <span
-        ref="siteName"
-        class="font-logo uppercase font-bold tracking-wide text-xl"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
-    </router-link>
-    <div>
-      <NavLinks/>
+  <nav
+    class="flex justify-between items-center flex-wrap p-6 border-b border-t border-grey-darkest z-50"
+  >
+    <div class="flex items-center flex-no-shrink text-black mr-6">
+      <router-link
+        v-if="!$page.frontmatter.home"
+        :to="$localePath"
+        class="no-underline text-black font-logo uppercase font-bold tracking-wide text-xl"
+      >The Foreign Architect</router-link>
     </div>
-  </header>
+    <div class="block lg:hidden">
+      <button class="flex items-center rounded hover:text-grey-darker" @click="toggleMenu">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="w-full lg:flex lg:items-center lg:w-auto hidden lg:block">
+      <div class="text-sm lg:flex-grow">
+        <NavLinks/>
+      </div>
+    </div>
+    <div
+      v-if="showMenu && windowWidth <= 992"
+      class="w-full block lg:flex lg:items-center lg:w-auto"
+    >
+      <div class="text-sm lg:flex-grow lg:hidden">
+        <NavLinks/>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -31,29 +43,23 @@ export default {
 
   data() {
     return {
-      linksWrapMaxWidth: null,
+      showMenu: false,
+
+      windowWidth: 0,
     };
   },
-
   mounted() {
-    const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
-    const NAVBAR_VERTICAL_PADDING =
-      parseInt(css(this.$el, 'paddingLeft')) +
-      parseInt(css(this.$el, 'paddingRight'));
-    const handleLinksWrapWidth = () => {
-      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
-        this.linksWrapMaxWidth = null;
-      } else {
-        this.linksWrapMaxWidth =
-          this.$el.offsetWidth -
-          NAVBAR_VERTICAL_PADDING -
-          ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
-      }
-    };
-    handleLinksWrapWidth();
-    window.addEventListener('resize', handleLinksWrapWidth, false);
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
   },
-
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+    handleResize() {
+      this.windowWidth = window.innerWidth;
+    },
+  },
   computed: {
     algolia() {
       return (
@@ -65,14 +71,15 @@ export default {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName;
     },
   },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+  watch: {
+    windowWidth(newValue) {
+      if (newValue > 992) this.showMenu = false;
+    },
+  },
 };
-
-function css(el, property) {
-  // NOTE: Known bug, will return 'auto' if style value is 'auto'
-  const win = el.ownerDocument.defaultView;
-  // null means not to return pseudo styles
-  return win.getComputedStyle(el, null)[property];
-}
 </script>
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-block relative mr-2">
+  <div class="inline-block relative my-1 lg:my-0 lg:mr-2">
     <input
       @input="query = $event.target.value"
       aria-label="Search"
