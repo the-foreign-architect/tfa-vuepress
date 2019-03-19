@@ -1,4 +1,4 @@
-let plugins = [require('tailwindcss')('./tailwind.config.js'), require('cssnano')];
+let plugins = [require('tailwindcss')('./tailwind.config.js')];
 
 // if (process.env.NODE_ENV === 'production') {
 //   // only add purgecss if production
