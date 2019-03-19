@@ -1,27 +1,9 @@
-# Contact Me
+I am a big fan of e-mail newsletters. For me, it feels like a more direct connection with the authors I am interested in.
 
-I am currently only accepting requests for training, workshops, and speaking gigs. If you are a recruiter, I love you, but please don’t call or email me.
+The best newsletters are those that seem especially curated, containing not only links to the author's latest content but other selected content around the topic. Beyond RSS (which I use a lot as well), it is a nice way to keep track of all new interesting content out there.
 
-If you would like to get in touch, please shoot me an email at [bencodezen@gmail.com](mailto:bencodezen@gmail.com) and I’ll get back to you as soon as I can! 
+<strong>The TFA Newsletter will provide you with the latest content of this site, as well as selected links about architecture and travel.</strong>
 
-Or if you prefer to get in touch with me via social media channels, here they are:
+Subscribe and receive every 2 weeks my little update to you.
 
-<LogoIconList />
-
-::: warning Note
-If you don't hear from me within a few days, your email might have ended up in spam and I'd recommend to reach out again via email or [Twitter](https://www.twitter.com/bencodezen).
-:::
-
-## Services
-
-### Consulting
-
-I have limited availability for consultation for Vue.js projects. Please email me if you would like to work with me!
-
-### Speaking, Training & Workshops
-
-Over the last few years, I have been teaching various aspects of web development and programming. I have also spoken at various conferences on Vue.js. You can find some of my past work in [my Notist profile](https://noti.st/bencodezen).
-
-I am currently available for speaking opportunities in 2019 and am available for both private and corporate training. For more information, be sure to email me!
-
-
+[mc4wp_form id="48"]
