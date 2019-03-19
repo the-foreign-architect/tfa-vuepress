@@ -19,12 +19,14 @@ permalink: /guides/:slug
 ---
 
 ::: tip
+
 **Berlin Contemporary Architecture Guide**  
 &larr; [Introduction](./berlin.md)  
 &darr; Part 1 - Between East and West Berlin  
 &rarr; [Part 2 - The architecture of reunification: Potsdamer Platz and Kulturforum](./berlin-02-reunification.md)  
 &rarr; [Part 3 - Up north along Friedrichstraße](./berlin-03-friedrichstadt.md)  
-&rarr; [Part 4 - In the heart of East Berlin](./berlin-04-alexanderplatz-museuminsel.md)  
+&rarr; [Part 4 - In the heart of East Berlin](./berlin-04-alexanderplatz-museuminsel.md)
+
 :::
 
 While studying in Germany, we had a studio trip to Berlin with one of our professors. He took us on a tour which, until today, I take my own guests when they are visiting Berlin for the first time. It is a mix of impressive contemporary architecture, landscape architecture, urban art installations, and the occasional touristic spot. On a warm day, it is a super nice stroll.

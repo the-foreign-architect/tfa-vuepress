@@ -34,26 +34,16 @@ module.exports = {
   },
   markdown: {
     anchor: {
-      permalinkSymbol: '',
+      permalinkSymbol: ''
     },
     toc: {
-      includeLevel: [2],
-    },
-    config: md => {
-      md.use(require('markdown-it-container'), 'about');
-    },
+      includeLevel: [2]
+    }
   },
-  // postcss: {
-  //   plugins: require('./plugins'),
-  // },
   postcss: {
-    plugins: [
-      require("tailwindcss")("./tailwind.config.js"),
-      require("autoprefixer")
-    ]
+    plugins: [require('tailwindcss')('./tailwind.config.js'), require('autoprefixer')],
   },
   plugins: [
-
     [
       '@vuepress/google-analytics',
       {
