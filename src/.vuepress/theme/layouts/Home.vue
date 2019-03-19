@@ -1,27 +1,22 @@
 <template>
-  <div class="w-full bg-white">
-    <div class="fixed pin h-full z-0">
-      <img
-        v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
-        alt="The Foreign Architect"
-        class="h-full w-full"
-      >
-    </div>
-    <section id="hero" class="relative h-screen flex items-end w-full">
-      <div class="z-20 relative pb-16 w-2/3 px-8 pt-8 container mx-auto bg-white">
+  <div
+    class="h-screen w-full"
+    :style="'background: url('+$withBase(data.heroImage)+') fixed center/cover;'"
+  >
+    <div id="hero" class="p-6 md:p-8 h-full w-full flex items-center">
+      <div>
         <h1
-          class="font-logo mb-2 uppercase font-bold tracking-wide"
+          class="bg-white font-logo p-1 mb-2 md:mb-4 uppercase font-bold tracking-wide"
         >{{ data.heroText || $title || 'Hello' }}</h1>
         <p
-          class="leading-normal font-serif text-lg"
+          class="bg-white leading-normal font-serif text-lg p-1 mb-2 md:mb-4"
         >{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
-        <a
-          href="#guides"
-          class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white no-underline hover:bg-blue-dark mt-6 p-2 rounded-sm"
-        >{{data.actionText}}</a>
+        <button
+          class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white p-2 rounded-sm"
+        >{{data.actionText}}</button>
       </div>
-    </section>
+    </div>
+
     <!-- <div class="hero">
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
 
@@ -46,10 +41,9 @@
       </div>
 
     -->
-    <div class="relative w-full bg-white">
-      <div class="w-2/3 mx-auto px-8 pt-16">
-        <nav-links/>
-
+    <navbar/>
+    <main role="main" class="container mx-auto bg-white">
+      <div class="px-6 w-full lg:w-2/3 mx-auto pt-8">
         <home-about :profileImage="data.profileImage"/>
 
         <home-guides :guides="data.guides"/>
@@ -58,16 +52,19 @@
 
         <home-blog/>
       </div>
-    </div>
+    </main>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import NavLinks from '../components/NavLinks.vue';
+import Navbar from '../components/Navbar.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   components: {
-    NavLinks,
+    Navbar,
+    Footer,
   },
 
   computed: {

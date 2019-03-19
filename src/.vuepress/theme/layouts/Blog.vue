@@ -64,8 +64,6 @@ import {
 export default {
   name: 'Blog',
 
-  props: ['sidebarItems'],
-
   computed: {
     lastUpdated() {
       if (this.$page.lastUpdated) {

@@ -4,36 +4,6 @@
 
     <Content :custom="false"/>
 
-    <div class="page-edit">
-      <div class="edit-link" v-if="editLink">
-        <a
-          href="https://github.com/bencodezen/bencodezen/issues/new"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ editLinkText }}
-          <OutboundLink/>
-        </a>
-      </div>
-
-      <div class="last-updated" v-if="lastUpdated">
-        <span class="prefix">{{ lastUpdatedText }}:</span>
-        <span class="time">{{ lastUpdated }}</span>
-      </div>
-    </div>
-
-    <div class="page-nav" v-if="prev || next">
-      <p class="inner">
-        <span v-if="prev" class="prev">←
-          <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
-        </span>
-        
-        <span v-if="next" class="next">
-          <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>→
-        </span>
-      </p>
-    </div>
-
     <slot name="bottom"/>
   </div>
 </template>
@@ -47,8 +17,6 @@ import {
 } from '../mixins/util';
 
 export default {
-  props: ['sidebarItems'],
-
   computed: {
     lastUpdated() {
       if (this.$page.lastUpdated) {
@@ -116,33 +84,6 @@ export default {
         this.$themeLocaleConfig.editLinkText ||
         this.$site.themeConfig.editLinkText ||
         `Edit this page`
-      );
-    },
-  },
-
-  methods: {
-    createEditLink(repo, docsRepo, docsDir, docsBranch, path) {
-      const bitbucket = /bitbucket.org/;
-      if (bitbucket.test(repo)) {
-        const base = outboundRE.test(docsRepo) ? docsRepo : repo;
-        return (
-          base.replace(endingSlashRE, '') +
-          `/${docsBranch}` +
-          (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-          path +
-          `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
-        );
-      }
-
-      const base = outboundRE.test(docsRepo)
-        ? docsRepo
-        : `https://github.com/${docsRepo}`;
-
-      return (
-        base.replace(endingSlashRE, '') +
-        `/edit/${docsBranch}` +
-        (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-        path
       );
     },
   },
