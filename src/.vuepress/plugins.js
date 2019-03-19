@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
         '.vuepress/theme/**/*.md',
         '.vuepress/theme/**/*.js',
         '.vuepress/theme/templates/*.html',
-        '.vuepress/theme/styles/*.styl',
+        '.vuepress/theme/styles/*.css',
       ],
 
       extractors: [
@@ -25,12 +25,12 @@ if (process.env.NODE_ENV === 'production') {
               return content.match(/[A-z0-9-:\/]+/g) || [];
             }
           },
-          extensions: ['css', 'html', 'js', 'vue', 'md', 'styl'],
+          extensions: ['css', 'html', 'js', 'vue', 'md'],
         },
       ],
 
       /**
-       * Ensure default resets and normalised classes ar enot removed by PurgeCSS
+       * Ensure default resets and normalised classes are not removed by PurgeCSS
        */
       whitelistPatterns: [
         /^(h\d|p$|ul|li$|div|ol|table|td$|th$|thead|tbody|main|input|button|form|md-|hljs)/,
