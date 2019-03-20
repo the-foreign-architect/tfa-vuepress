@@ -1,11 +1,9 @@
 <template>
   <div class="-mt-16 pt-16 flex-grow">
-    <header class="hero-header mb-8 md:mb-16 flex flex-col md:flex-row border-b border-grey-light">
-      <div
-        class="w-full md:w-1/2 overflow-hidden flex items-center justify-center flex-row flex-no-wrap relative"
-      >
-        <img :src="coverImageUrl" class="hero-img min-h-full max-h-full flex-shrink">
-      </div>
+    <header
+      class="hero-header-blog mb-8 md:mb-16 flex flex-col md:flex-row border-b border-grey-light"
+    >
+      <div class="w-full h-full md:w-1/2" :style="headerHeroStyle"></div>
       <div class="px-6 bg-white md:w-1/2 my-auto">
         <p class="uppercase leading-loose mb-2 text-grey-dark">
           <time :datetime="$frontmatter.date">{{ publishDate }}</time>
@@ -103,6 +101,12 @@ export default {
 
     urlPostTitle() {
       return encodeURIComponent(this.$page.title);
+    },
+
+    headerHeroStyle() {
+      return `background: center / cover no-repeat url("${
+        this.coverImageUrl
+      }");`;
     },
   },
 

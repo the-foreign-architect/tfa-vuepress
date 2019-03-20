@@ -1,26 +1,10 @@
 <template>
   <div class="-mt-16 pt-16 flex-grow">
-    <header class="hero-header mb-8 md:mb-16 flex flex-col md:flex-row border-b border-grey-light">
-      <div
-        class="w-full md:w-1/2 overflow-hidden flex items-center justify-center flex-row flex-no-wrap relative"
-      >
-        <img :src="coverImageUrl" class="hero-img min-h-full max-h-full flex-shrink">
-      </div>
-      <div class="px-6 bg-white md:w-1/2 my-auto">
-        <p class="uppercase leading-loose mb-2 text-grey-dark">
-          <time :datetime="$frontmatter.date">{{ publishDate }}</time>
-        </p>
-        <h1 class="font-serif text-4xl mb-2">{{ $page.title }}</h1>
-        <p class="font-serif text-xl leading-normal mb-4">{{$frontmatter.excerpt}}</p>
-        <ul class="list-reset flex justify-start">
-          <li
-            v-for="tag in $frontmatter.tags"
-            :key="tag"
-            class="uppercase mr-4 text-grey-dark leading-loose text-sm"
-          >#{{tag}}</li>
-        </ul>
-      </div>
-    </header>
+    <guide-header :frontmatter="$frontmatter">
+      <template #date>{{publishDate}}</template>
+      <template #title>{{$page.title}}</template>
+      <template #excerpt>{{$frontmatter.excerpt}}</template>
+    </guide-header>
     <main
       id="custom-content"
       role="main"
@@ -62,12 +46,6 @@ export default {
   components: { Footer },
 
   computed: {
-    coverImageUrl() {
-      return (
-        'https://res.cloudinary.com/tfa/image/upload/c_scale,g_center,w_2000/' +
-        this.$frontmatter.coverImage
-      );
-    },
     lastUpdated() {
       if (this.$page.lastUpdated) {
         const dateFormat = new Date(this.$page.lastUpdated);
@@ -142,7 +120,5 @@ function find(page, items, offset) {
   }
 }
 </script>
-<style>
-</style>
 
 
