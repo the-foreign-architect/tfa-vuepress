@@ -51,7 +51,7 @@
 
         <home-map :map="data.map"/>
 
-        <home-blog/>
+        <home-blog :list="$site.pages"/>
       </div>
     </main>
     <Footer/>
