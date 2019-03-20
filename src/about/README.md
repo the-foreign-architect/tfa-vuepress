@@ -1,5 +1,7 @@
 # About
 
+<captioned-image alt="Walking in the city" caption="" imgFile="v1553101179/misc/undraw_walk_in_the_city_1ma6.png" />
+
 ## Travel &amp; Architecture
 
 **Traveling always involves architecture.** From sleek glass and steel skyscrapers in large cities to the fisherman’s hut on a paradise beach, architecture is eventually surrounding us almost everywhere we go.
