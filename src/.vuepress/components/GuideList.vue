@@ -10,8 +10,12 @@
         <button type="button" @click="selectedTag = ''" class="btn clear-filter-btn">Clear filter</button>
       </div>
     </div>
-    <ul class="list-reset flex flex-wrap my-8 -mx-4">
-      <li v-for="(item, index) in filteredList" class="p-4 w-full md:w-1/2 lg:w-1/3">
+    <ul class="list-reset guide-item-preview">
+      <li
+        v-for="(item, index) in filteredList"
+        :key="item.title"
+        :class="index <= displayRange.end ? 'block' : 'hidden'"
+      >
         <GuidePreview
           v-show="index <= displayRange.end"
           :excerpt="item.frontmatter.excerpt"
@@ -30,7 +34,11 @@
       v-if="displayRange.end <= filteredList.length && !$page.frontmatter.home"
       class="pagination"
     >
-      <button @click="loadMore" class="button--load-more" type="button">Load More</button>
+      <button
+        @click="loadMore"
+        class="bg-black text-white uppercase tracking-wide p-2 shadow rounded-sm text-sm hover:shadow-md hover:bg-grey-darker"
+        type="button"
+      >Load More</button>
     </div>
   </div>
 </template>
@@ -47,7 +55,7 @@ export default {
   data() {
     return {
       displayRange: {
-        end: 6,
+        end: 10,
       },
       selectedTag: '',
     };
@@ -95,6 +103,15 @@ export default {
   },
 };
 </script>
-
+<style>
+.guide-item-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+</style>
 
 
