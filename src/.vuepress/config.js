@@ -20,7 +20,7 @@ module.exports = {
         text: 'About',
         link: '/about/',
       },
-      { text: 'Newsletter', link: '/contact/index.html' },
+      { text: 'Newsletter', link: '/newsletter/index.html' },
     ],
     user: {
       socialMedia: [
