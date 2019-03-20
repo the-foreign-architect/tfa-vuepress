@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-6">
+  <div>
     <div v-if="!$page.frontmatter.home">
       <div class="my-8">
         <h1 class="font-serif font-normal">Guides</h1>
