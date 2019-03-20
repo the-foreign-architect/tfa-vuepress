@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full shadow flex justify-between flex-col">
+  <section class="h-full border border-grey-lighter flex justify-between flex-col pb-4">
     <div>
       <div
         class="h-64 p-2 flex items-start justify-start shadow hover:shadow-md cursor-pointer mb-2"
@@ -8,16 +8,16 @@
       >
         <time class="uppercase leading-loose text-white text-sm">{{ formatPublishDate }}</time>
       </div>
-      <div class="px-2">
+      <div class="px-4 mb-4">
         <h5 class="text-lg font-serif mb-2">
           <a :href="path" class="blog-post__link">{{ title }}</a>
         </h5>
         <p v-if="excerpt">
-          <span class="text-sm leading-none">{{ excerpt }}</span>
+          <span class="text-sm">{{ excerpt }}</span>
         </p>
       </div>
     </div>
-    <div class="text-right px-2 pb-1">
+    <div class="text-right pr-4 pb-1">
       <a class="text-sm font-bold" :href="path">Read More &rarr;</a>
     </div>
   </section>
