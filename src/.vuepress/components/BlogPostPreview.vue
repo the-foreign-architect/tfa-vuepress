@@ -1,3 +1,28 @@
+<template>
+  <section class="h-full shadow flex justify-between flex-col">
+    <div>
+      <div
+        class="h-64 p-2 flex items-start justify-start shadow hover:shadow-md cursor-pointer mb-2"
+        :style="headerHeroStyle"
+        @click="$router.push(path)"
+      >
+        <time class="uppercase leading-loose text-white text-sm">{{ formatPublishDate }}</time>
+      </div>
+      <div class="px-2">
+        <h5 class="text-lg font-serif mb-2">
+          <a :href="path" class="blog-post__link">{{ title }}</a>
+        </h5>
+        <p v-if="excerpt">
+          <span class="text-sm leading-none">{{ excerpt }}</span>
+        </p>
+      </div>
+    </div>
+    <div class="text-right px-2 pb-1">
+      <a class="text-sm font-bold" :href="path">Read More &rarr;</a>
+    </div>
+  </section>
+</template>
+
 <script>
 export default {
   name: 'BlogPostPreview',
@@ -8,7 +33,7 @@ export default {
     },
     tags: {
       type: Array,
-      required: false,
+      required: true,
     },
     title: {
       type: String,
@@ -20,7 +45,11 @@ export default {
     },
     excerpt: {
       type: String,
-      required: false,
+      required: true,
+    },
+    coverImage: {
+      type: String,
+      required: true,
     },
   },
   computed: {
@@ -34,19 +63,22 @@ export default {
 
       return dateFormat.toLocaleDateString('en-US', options);
     },
+    thumbImageUrl() {
+      return (
+        'https://res.cloudinary.com/tfa/image/upload/c_scale,e_saturation:-50,g_center,w_500/' +
+        this.coverImage
+      );
+    },
+    headerHeroStyle() {
+      return `background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25),transparent,transparent, transparent), url(${
+        this.thumbImageUrl
+      });
+          background-size: cover';
+          background-repeat: no-repeat;
+          background-position: center top;`;
+    },
   },
 };
 </script>
-
-<template>
-  <section class="blog-post">
-    <time class="blog-post__time">{{ formatPublishDate }}</time>
-    <h2 class="blog-post__title">
-      <a :href="path" class="blog-post__link">{{ title }}</a>
-    </h2>
-    <p v-if="excerpt" class="blog-post__excerpt">{{ excerpt }}</p>
-    <a class="button blog-post__button" :href="path">Read More ></a>
-  </section>
-</template>
 
 
