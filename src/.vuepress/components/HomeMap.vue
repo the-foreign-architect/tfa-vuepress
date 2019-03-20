@@ -4,7 +4,9 @@
     <p
       class="text-center mb-8"
     >Before, during, and after I go in a trip, I spend a lot of time building maps with selection of buildings I wanna see. Here is the latest one.</p>
-    <div class="w-full h-64 bg-green-lightest">{{map}}</div>
+    <div class="md:-mx-16">
+      <guide-map map="https://www.google.com/maps/d/embed?mid=19Bg9JybbEZ-nxtg_LGtidjBKz3M"/>
+    </div>
   </section>
 </template>
 
