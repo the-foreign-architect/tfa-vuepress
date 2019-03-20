@@ -11,9 +11,10 @@
         <p
           class="bg-white leading-normal font-serif text-lg p-1 mb-2 md:mb-4"
         >{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
-        <button
-          class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white p-2 rounded-sm"
-        >{{data.actionText}}</button>
+        <a
+          href="#guides"
+          class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white p-2 rounded-sm shadow-none hover:bg-red-darker hover:shadow-none"
+        >{{data.actionText}}</a>
       </div>
     </div>
 
