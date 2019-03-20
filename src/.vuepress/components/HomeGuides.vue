@@ -4,7 +4,9 @@
     <p
       class="text-center mb-8"
     >Curated guides with my selection of the most exciting new architecture in each on of these cities.</p>
-    <guide-list :list="$site.pages"/>
+    <div class="md:-mx-16">
+      <guide-list :list="$site.pages"/>
+    </div>
   </section>
 </template>
 
