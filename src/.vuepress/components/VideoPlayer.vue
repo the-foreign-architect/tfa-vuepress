@@ -1,12 +1,20 @@
 <template>
-  <vue-plyr style="max-width: 600px;" class="mx-auto my-8">
-    <div :data-plyr-provider="provider" :data-plyr-embed-id="id"></div>
-  </vue-plyr>
+  <div class="my-8 flex justify-center items-center">
+    <iframe
+      id="`player-${id}`"
+      type="text/html"
+      width="800"
+      height="450"
+      :src="src"
+      frameborder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen
+    ></iframe>
+  </div>
 </template>
 
 <script>
-import 'vue-plyr/dist/vue-plyr.css';
-
 export default {
   name: 'VideoPlayer',
   props: {
@@ -19,8 +27,16 @@ export default {
       required: true,
     },
   },
+  computed: {
+    src() {
+      if (this.provider === 'youtube') {
+        return `https://www.youtube.com/embed/${
+          this.id
+        }?origin=https://theforeignarchitect.com`;
+      } else if (this.provider === 'vimeo') {
+        return `https://player.vimeo.com/video/${this.id}?color=ffffff`;
+      }
+    },
+  },
 };
 </script>
-
-<style scoped>
-</style>
