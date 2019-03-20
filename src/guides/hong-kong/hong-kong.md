@@ -11,7 +11,7 @@ tags:
 sharingHashtags: hongkong,cityguide
 city: Hong Kong
 series: true
-series_chapter: 0
+seriesChapter: 0
 coverImage: v1552415868/guides/hong-kong/hong-kong-cover.jpg
 pinterestMedia: v1552415736/guides/hong-kong/TFA-HongKong-Architecture-Guide.jpg
 navbar: true

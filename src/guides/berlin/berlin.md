@@ -12,7 +12,7 @@ sharingHashtags: berlin,cityguide
 pinterestMedia: v1552415269/guides/berlin/berlin_pinterest.jpg
 city: Berlin
 series: true
-series_chapter: 0
+seriesChapter: 0
 coverImage: v1552415276/guides/berlin/berlin-cover.jpg
 navbar: true
 permalink: /guides/:slug

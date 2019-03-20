@@ -11,7 +11,7 @@ tags:
 sharingHashtags: lisbon,cityguide
 city: Lisbon
 series: true
-series_chapter: 2
+seriesChapter: 2
 coverImage: v1552749956/guides/lisbon/lisbon-1-3.jpg
 pinterestMedia: v1552411498/guides/lisbon/TFA-Lisbon-Architecture-Guide.jpg
 navbar: true

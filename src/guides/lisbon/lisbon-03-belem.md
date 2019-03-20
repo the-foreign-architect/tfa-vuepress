@@ -11,7 +11,7 @@ tags:
 city: Lisbon
 sharingHashtags: lisbon,cityguide,belem
 series: true
-series_chapter: 3
+seriesChapter: 3
 coverImage: v1552411574/guides/lisbon/150717-135912-belem-DSC06487.jpg
 pinterestMedia: v1552411498/guides/lisbon/TFA-Lisbon-Architecture-Guide.jpg
 navbar: true

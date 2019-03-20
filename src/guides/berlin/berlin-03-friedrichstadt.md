@@ -12,7 +12,7 @@ sharingHashtags: berlin,cityguide
 pinterestMedia: v1552415269/guides/berlin/berlin_pinterest.jpg
 city: Berlin
 series: true
-series_chapter: 3
+seriesChapter: 3
 coverImage: v1552914415/guides/berlin/Jewish_Museum_Berlin_-_panoramio_3-1100x733.jpg
 navbar: true
 permalink: /guides/:slug

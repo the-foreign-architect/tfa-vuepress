@@ -11,7 +11,7 @@ tags:
 sharingHashtags: hongkong,cityguide,ghostintheshel
 city: Hong Kong
 series: true
-series_chapter: 3
+seriesChapter: 3
 coverImage: v1552415877/guides/hong-kong/170409-225120-CN-Hong_Kong.jpg
 pinterestMedia: v1552415736/guides/hong-kong/TFA-HongKong-Architecture-Guide.jpg
 navbar: true

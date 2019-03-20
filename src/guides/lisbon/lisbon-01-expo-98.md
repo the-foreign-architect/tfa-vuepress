@@ -11,7 +11,7 @@ tags:
 sharingHashtags: lisbon,cityguide,expo98
 city: Lisbon
 series: true
-series_chapter: 1
+seriesChapter: 1
 coverImage: v1552411572/guides/lisbon/150712-094609-lisbon-DSC06013.jpg
 pinterestMedia: v1552411498/guides/lisbon/TFA-Lisbon-Architecture-Guide.jpg
 navbar: true

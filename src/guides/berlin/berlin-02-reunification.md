@@ -12,7 +12,7 @@ sharingHashtags: berlin,cityguide
 pinterestMedia: v1552415269/guides/berlin/berlin_pinterest.jpg
 city: Berlin
 series: true
-series_chapter: 2
+seriesChapter: 2
 coverImage: v1552914075/guides/berlin/1280px-Potsdamer_Platz_2C_Berlin_2C_151024_2C_ako.jpg
 navbar: true
 permalink: /guides/:slug

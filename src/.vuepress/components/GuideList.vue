@@ -67,7 +67,7 @@ export default {
                 item.frontmatter.tags.includes(this.selectedTag);
               const isSeriesFirst =
                 (item.frontmatter.series &&
-                  item.frontmatter.series_chapter === 0) ||
+                  item.frontmatter.seriesChapter === 0) ||
                 !item.frontmatter.series;
               const shouldPublish = this.selectedTag
                 ? isGuide && isReadyToPublish && isSeriesFirst && hasTags
