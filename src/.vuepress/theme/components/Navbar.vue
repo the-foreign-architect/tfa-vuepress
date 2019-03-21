@@ -1,5 +1,6 @@
 <template>
   <nav
+    id="navigation"
     class="flex justify-between items-center flex-wrap p-6 border-b border-t border-grey-darkest z-50"
   >
     <div class="flex items-center flex-no-shrink text-black mr-6">
