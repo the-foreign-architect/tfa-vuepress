@@ -76,43 +76,43 @@
 ###### BLOG
 [[redirects]]
   from = "/golden-kitties-views-above/"
-  to = "/blog/*splat"
+  to = "/blog/golden-kitties-views-above/"
 [[redirects]]
   from = "/music-map-tokyo-photography/"
-  to = "/blog/*splat"
+  to = "/blog/music-map-tokyo-photography/"
 [[redirects]]
   from = "/a-hostel-in-beijing-and-new-shoes-in-berlin/"
-  to = "/blog/*splat"
+  to = "/blog/a-hostel-in-beijing-and-new-shoes-in-berlin/"
 [[redirects]]
   from = "/weekly-2018-02/"
-  to = "/blog/*splat"
+  to = "/blog/weekly-2018-02/"
 [[redirects]]
   from = "/hsbc-building-hong-kong/"
-  to = "/blog/*splat"
+  to = "/blog/hsbc-building-hong-kong/"
 [[redirects]]
   from = "/ewha-womans-university-perrault/"
-  to = "/blog/*splat"
+  to = "/blog/ewha-womans-university-perrault/"
 [[redirects]]
   from = "/dongdaemun-design-plaza-seoul/"
-  to = "/blog/*splat"
+  to = "/blog/dongdaemun-design-plaza-seoul/"
 [[redirects]]
   from = "/must-have-app-to-help-you-schedule-your-photography/"
-  to = "/blog/*splat"
+  to = "/blog/must-have-app-to-help-you-schedule-your-photography/"
 [[redirects]]
   from = "/visiting-future-tallest-building-beijing/"
-  to = "/blog/*splat"
+  to = "/blog/visiting-future-tallest-building-beijing/"
 [[redirects]]
   from = "/magic-hours-will-make-photography-shine/"
-  to = "/blog/*splat"
+  to = "/blog/magic-hours-will-make-photography-shine/"
 [[redirects]]
   from = "/quick-guide-visit-worlds-tallest-building-burj-khalifa-dubai/"
-  to = "/blog/*splat"
+  to = "/blog/quick-guide-visit-worlds-tallest-building-burj-khalifa-dubai/"
 [[redirects]]
   from = "/quick-story-becoming-foreign-architect/"
-  to = "/blog/*splat"
+  to = "/blog/quick-story-becoming-foreign-architect/"
 [[redirects]]
   from = "/quick-story-becoming-foreign-architect/"
-  to = "/blog/*splat"
+  to = "/blog/quick-story-becoming-foreign-architect/"
 [[redirects]]
   from = "/google-maps-guide-plan-and-organize-trips/"
   to = "/blog/"
