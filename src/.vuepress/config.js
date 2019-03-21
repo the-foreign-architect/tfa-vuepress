@@ -146,15 +146,6 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
     ['meta', { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['script', { async: true, src: 'https://static.codepen.io/assets/embed/ei.js' }],
     ['script', { async: true, src: 'https://product-gallery.cloudinary.com/all.js' }],
-    [
-      'script',
-      {
-        async: true,
-        src: 'https://platform.twitter.com/widgets.js',
-        charset: 'utf-8',
-      },
-    ],
   ],
 };
