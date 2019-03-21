@@ -1,5 +1,7 @@
 # The Foreign Architect
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33051815-aa20-4423-8ca8-d5e3489b9304/deploy-status)](https://app.netlify.com/sites/theforeignarchitect/deploys)
+
 Contemporary Architecture Travel Guides
 
 ## Dependencies
