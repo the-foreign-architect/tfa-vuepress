@@ -9,7 +9,7 @@
         <time class="uppercase leading-loose text-white text-sm">{{ formatPublishDate }}</time>
       </div>
       <div class="px-4 mb-4">
-        <h5 class="text-lg font-serif mb-2">
+        <h5 class="text-lg font-serif mb-2 leading-normal">
           <a :href="path" class="blog-post__link">{{ title }}</a>
         </h5>
         <p v-if="excerpt">
