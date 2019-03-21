@@ -17,12 +17,41 @@
         <p
           class="mb-6"
         >This site is my contribution to my fellow architecture fans: a collection of guides, maps, and insights about the new architecture happening out there.</p>
-        <p
-          class="mb-6"
-        >Start by checking out the guides below and the latest posts on the blog. You can also learn more about me here.</p>
-        <p
-          class="mb-6"
-        >Make sure you sign up to receive the latest updates. You can also find me on:</p>
+        <p class="mb-6">
+          Start by checking out the
+          <a href="#guides">guides</a> below and the latest posts on the blog. You can also learn more about me
+          <a href="/about">here.</a>
+        </p>
+        <p class="mb-6">
+          Make sure you
+          <a href="/newsletter">sign up</a> to receive the latest updates. You can also find me on:
+        </p>
+        <div class="flex justify-center">
+          <a
+            href="https://twitter.com/theForeignArch"
+            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            target="_blank"
+            alt="@theForeignArch on Twitter"
+          >
+            <font-awesome-icon :icon="['fab','twitter-square']" size="2x" class="mr-4"></font-awesome-icon>
+          </a>
+          <a
+            href="https://www.pinterest.de/theforeignarchitect/pins/"
+            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            alt="@theForeignArchitect on Pinterest"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab','pinterest-square']" size="2x" class="mr-4"></font-awesome-icon>
+          </a>
+          <a
+            href="https://www.instagram.com/danroc/"
+            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            target="_blank"
+            alt="@danroc on Instagram"
+          >
+            <font-awesome-icon :icon="['fab','instagram']" size="2x" class="mr-4"></font-awesome-icon>
+          </a>
+        </div>
       </div>
     </div>
   </section>
