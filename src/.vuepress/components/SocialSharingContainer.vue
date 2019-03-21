@@ -13,22 +13,22 @@
     >
       <div>
         <network class="mr-4 cursor-pointer" network="facebook">
-          <i class="fab fa-facebook"></i> Facebook
+          <font-awesome-icon :icon="['fab','facebook']" class="mr-2"></font-awesome-icon>Facebook
         </network>
         <network class="mr-4 cursor-pointer" network="linkedin">
-          <i class="fab fa-linkedin"></i> LinkedIn
+          <font-awesome-icon :icon="['fab','linkedin']" class="mr-2"></font-awesome-icon>LinkedIn
         </network>
         <network class="mr-4 cursor-pointer" network="pinterest">
-          <i class="fab fa-pinterest"></i> Pinterest
+          <font-awesome-icon :icon="['fab','pinterest']" class="mr-2"></font-awesome-icon>Pinterest
         </network>
         <network class="mr-4 cursor-pointer" network="reddit">
-          <i class="fab fa-reddit"></i> Reddit
+          <font-awesome-icon :icon="['fab','reddit']" class="mr-2"></font-awesome-icon>Reddit
         </network>
         <network class="mr-4 cursor-pointer" network="twitter">
-          <i class="fab fa-twitter"></i> Twitter
+          <font-awesome-icon :icon="['fab','twitter']" class="mr-2"></font-awesome-icon>Twitter
         </network>
         <network class="mr-4 cursor-pointer" network="whatsapp">
-          <i class="fab fa-whatsapp"></i> Whatsapp
+          <font-awesome-icon :icon="['fab','whatsapp']" class="mr-2"></font-awesome-icon>Whatsapp
         </network>
       </div>
     </social-sharing>
