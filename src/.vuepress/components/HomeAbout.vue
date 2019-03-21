@@ -20,11 +20,14 @@
         <p class="mb-6">
           Start by checking out the
           <a href="#guides">guides</a> below and the latest posts on the blog. You can also learn more about me
-          <a href="/about">here.</a>
+          <a
+            href="/about"
+          >here.</a>
         </p>
         <p class="mb-6">
           Make sure you
-          <a href="/newsletter">sign up</a> to receive the latest updates. You can also find me on:
+          <a href="/newsletter">sign up</a>
+          to receive the latest updates. You can also find me on:
         </p>
         <div class="flex justify-center">
           <a
@@ -34,6 +37,14 @@
             alt="@theForeignArch on Twitter"
           >
             <font-awesome-icon :icon="['fab','twitter-square']" size="2x" class="mr-4"></font-awesome-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/danrocha/"
+            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            target="_blank"
+            alt="Daniel da Rocha on LinkedIn"
+          >
+            <font-awesome-icon :icon="['fab','linkedin']" size="2x" class="mr-4"></font-awesome-icon>
           </a>
           <a
             href="https://www.pinterest.de/theforeignarchitect/pins/"
