@@ -8,7 +8,7 @@
       <slot name="page-top" slot="top"/>
       <slot name="page-bottom" slot="bottom"/>
     </Page>
-    <Footer v-if="!$page.frontmatter.home"/>
+    <Footer/>
   </div>
 </template>
 
