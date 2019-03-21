@@ -23,7 +23,9 @@
 </template>
 
 <script>
+import HomeTitle from './HomeTitle.vue';
 export default {
+  components: { HomeTitle },
   props: {
     list: {
       type: Array,

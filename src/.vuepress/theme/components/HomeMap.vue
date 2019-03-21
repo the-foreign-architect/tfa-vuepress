@@ -11,7 +11,9 @@
 </template>
 
 <script>
+import HomeTitle from './HomeTitle.vue';
 export default {
+  components: { HomeTitle },
   props: {
     map: {
       type: String,

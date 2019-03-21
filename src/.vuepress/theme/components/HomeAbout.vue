@@ -69,8 +69,10 @@
 </template>
 
 <script>
+import HomeTitle from './HomeTitle.vue';
 export default {
   name: 'HomeAbout',
+  components: { HomeTitle },
   props: {
     profileImage: {
       type: String,
