@@ -1,7 +1,7 @@
 ---
 home: true
 navbar: false
-heroImage: /images/hero/hero01.jpg
+heroImage: v1553237318/guides/hong-kong/hero01.jpg
 profileImage: /images/danieldarocha-beijing.jpg
 heroText: The Foreign Architect
 tagline: Travel to experience great contemporary architecture throughout the world.

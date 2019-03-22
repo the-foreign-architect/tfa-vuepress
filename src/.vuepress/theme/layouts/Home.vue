@@ -63,6 +63,12 @@ export default {
         text: this.data.actionText,
       };
     },
+    url() {
+      return (
+        'https://res.cloudinary.com/tfa/image/upload/c_scale,w_2500,q_auto:best/' +
+        this.data.heroImage
+      );
+    },
   },
 };
 </script>
