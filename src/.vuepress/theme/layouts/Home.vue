@@ -2,9 +2,9 @@
   <div>
     <div class="h-screen w-full" :style="'background: center / cover no-repeat url('+url+');'">
       <div id="hero" class="p-6 md:p-8 h-full w-full flex items-center">
-        <div>
+        <div class="bg-white p-8 rounded-sm shadow">
           <h1
-            class="bg-white font-logo p-1 mb-2 md:mb-4 uppercase font-bold tracking-wide"
+            class="bg-white font-logo p-1 mb-2 md:mb-2 uppercase font-bold tracking-wide"
           >{{ data.heroText || $title || 'Hello' }}</h1>
           <p
             class="bg-white leading-normal font-serif text-lg p-1 mb-2 md:mb-4"
@@ -12,7 +12,7 @@
           <a
             href="#guides"
             class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white p-2 rounded-sm shadow-none hover:bg-red-darker hover:shadow-none"
-          >{{data.actionText}}</a>
+          >{{data.actionText}}&nbsp;&darr;</a>
         </div>
       </div>
     </div>
