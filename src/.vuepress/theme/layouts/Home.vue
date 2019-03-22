@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      class="h-screen w-full"
-      :style="'background: url('+$withBase(data.heroImage)+') fixed center/cover;'"
-    >
+    <div class="h-screen w-full" :style="'background: center / cover no-repeat url('+url+');'">
       <div id="hero" class="p-6 md:p-8 h-full w-full flex items-center">
         <div>
           <h1
