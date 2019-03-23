@@ -10,3 +10,4 @@ yarn-error.log
 src/guides/*/_imgs/
 /drafts
 /resources
+.env

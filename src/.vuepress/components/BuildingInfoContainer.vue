@@ -23,7 +23,7 @@ export default {
     const { HttpLink } = require('apollo-link-http');
     const { InMemoryCache } = require('apollo-cache-inmemory');
     const apolloClient = new ApolloClient({
-      link: new HttpLink({ uri: 'http://localhost:3000/graphql' }),
+      link: new HttpLink({ uri: process.env.GRAPHQL_URL }),
       cache: new InMemoryCache(),
     });
     const { buildingById } = require('../graphql/BuildingInfo');

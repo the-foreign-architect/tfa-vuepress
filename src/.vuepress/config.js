@@ -1,3 +1,6 @@
+require('dotenv').config();
+const webpack = require('webpack');
+
 module.exports = {
   title: 'The Foreign Architect',
   dest: './public',
@@ -34,11 +37,11 @@ module.exports = {
   },
   markdown: {
     anchor: {
-      permalinkSymbol: ''
+      permalinkSymbol: '',
     },
     toc: {
-      includeLevel: [2]
-    }
+      includeLevel: [2],
+    },
   },
   postcss: {
     plugins: [require('tailwindcss')('./tailwind.config.js'), require('autoprefixer')],
@@ -148,4 +151,11 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['script', { async: true, src: 'https://product-gallery.cloudinary.com/all.js' }],
   ],
+  configureWebpack: (config) => {
+    return {
+      plugins: [
+        new webpack.EnvironmentPlugin({ ...process.env })
+      ]
+    }
+  }
 };
