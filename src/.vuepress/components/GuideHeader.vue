@@ -21,7 +21,9 @@
     </div>
     <div v-else class="hero-header-guide mb-8 md:mb-16">
       <div class="h-full w-full flex justify-start items-end" :style="headerHeroStyle">
-        <div class="bg-white w-2/3 mx-auto p-8 -mb-1 border-t border-grey-darkest">
+        <div
+          class="bg-white container lg:w-2/3 xl:w-1/2 px-6 pt-6 md:px-8 mx-auto -mb-1 border-t border-grey-darkest"
+        >
           <guide-header-content :frontmatter="frontmatter">
             <template #date>
               <slot name="date"/>

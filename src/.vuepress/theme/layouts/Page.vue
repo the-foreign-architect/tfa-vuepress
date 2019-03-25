@@ -3,7 +3,7 @@
     <main
       id="custom-content"
       role="main"
-      class="page-content container md:w-2/3 mx-auto my-8 px-6 md:px-8 flex-grow"
+      class="page-content container lg:w-2/3 xl:w-1/2 px-6 md:px-8 mx-auto my-8 flex-grow"
     >
       <Content custom/>
     </main>
