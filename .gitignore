@@ -8,6 +8,5 @@ node_modules
 yarn-error.log
 /_tmp
 src/guides/*/_imgs/
-/drafts
 /resources
 .env
