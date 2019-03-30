@@ -1,19 +1,14 @@
 <template>
-  <section id="about">
+  <section id="about" class="md:flex md:flex-wrap md:mb-16">
     <home-title>What's this?</home-title>
-    <div class="flex flex-col justify-center md:flex-row">
-      <div class="w-1/2 mx-auto mb-6 md:w-1/3">
-        <img
-          :src="$withBase(profileImage)"
-          height="400"
-          alt="Daniel da Rocha in Beijing"
-          class="rounded"
-        >
+    <div class="lg:flex md:w-2/3">
+      <div class="mx-auto mb-6 lg:mx-0 lg:w-1/3">
+        <img :src="profileImage" height="400" alt="Daniel da Rocha in Beijing" class="rounded">
       </div>
-      <div class="md:w-2/3 md:pl-6 text-lg">
+      <div class="lg:w-2/3 lg:pl-6 text-lg">
         <p
           class="mb-6"
-        >Hi! My name is Daniel and I am an architect. I am also crazy about traveling to see and experience architecture around the world.</p>
+        >Hi! My name is Daniel and I am an architect. I am also love to travel and see and experience architecture around the world.</p>
         <p
           class="mb-6"
         >This site is my contribution to my fellow architecture fans: a collection of guides, maps, and insights about the new architecture happening out there.</p>
@@ -32,35 +27,35 @@
         <div class="flex justify-center">
           <a
             href="https://twitter.com/theForeignArch"
-            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            class="mr-4 shadow-none hover:shadow-none hover:text-grey-dark"
             target="_blank"
             alt="@theForeignArch on Twitter"
           >
-            <font-awesome-icon :icon="['fab','twitter-square']" size="2x" class="mr-4"></font-awesome-icon>
+            <i class="fab fa-twitter-square fa-2x"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/danrocha/"
-            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            class="mr-4 shadow-none hover:shadow-none hover:text-grey-dark"
             target="_blank"
             alt="Daniel da Rocha on LinkedIn"
           >
-            <font-awesome-icon :icon="['fab','linkedin']" size="2x" class="mr-4"></font-awesome-icon>
+            <i class="fab fa-linkedin fa-2x"></i>
           </a>
           <a
             href="https://www.pinterest.de/theforeignarchitect/pins/"
-            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            class="mr-4 shadow-none hover:shadow-none hover:text-grey-dark"
             alt="@theForeignArchitect on Pinterest"
             target="_blank"
           >
-            <font-awesome-icon :icon="['fab','pinterest-square']" size="2x" class="mr-4"></font-awesome-icon>
+            <i class="fab fa-pinterest-square fa-2x"></i>
           </a>
           <a
             href="https://www.instagram.com/danroc/"
-            class="shadow-none hover:shadow-none hover:text-grey-dark"
+            class="mr-4 shadow-none hover:shadow-none hover:text-grey-dark"
             target="_blank"
             alt="@danroc on Instagram"
           >
-            <font-awesome-icon :icon="['fab','instagram']" size="2x" class="mr-4"></font-awesome-icon>
+            <i class="fab fa-instagram fa-2x"></i>
           </a>
         </div>
       </div>

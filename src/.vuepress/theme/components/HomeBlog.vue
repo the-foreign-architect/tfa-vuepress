@@ -1,23 +1,25 @@
 <template>
-  <section id="blog" class="mb-16">
+  <section id="blog" class="md:flex md:flex-wrap mb-16">
     <home-title>More from the blog</home-title>
-    <ul class="list-reset blog-item-preview md:-mx-16">
-      <li v-for="(item, index) in latestBlogPosts" :key="item.title">
-        <BlogPostPreview
-          :excerpt="item.frontmatter.excerpt"
-          :path="item.path"
-          :publishDate="item.frontmatter.date"
-          :tags="item.frontmatter.tags"
-          :title="item.frontmatter.title"
-          :coverImage="item.frontmatter.coverImage"
-        />
-      </li>
-    </ul>
-    <div class="my-8 flex justify-center">
-      <a
-        href="/blog/"
-        class="bg-black text-white uppercase tracking-wide p-2 shadow rounded-sm text-sm hover:shadow-md hover:bg-grey-darker"
-      >See More</a>
+    <div class="md:w-2/3 text-lg">
+      <ul class="list-reset blog-item-preview">
+        <li v-for="(item, index) in latestBlogPosts" :key="item.title">
+          <BlogPostPreview
+            :excerpt="item.frontmatter.excerpt"
+            :path="item.path"
+            :publishDate="item.frontmatter.date"
+            :tags="item.frontmatter.tags"
+            :title="item.frontmatter.title"
+            :coverImage="item.frontmatter.coverImage"
+          />
+        </li>
+      </ul>
+      <div class="my-8 flex justify-center">
+        <a
+          href="/blog/"
+          class="bg-black text-white uppercase tracking-wide p-2 shadow rounded-sm text-sm hover:shadow-md hover:bg-grey-darker"
+        >See More</a>
+      </div>
     </div>
   </section>
 </template>
@@ -63,7 +65,7 @@ export default {
               (a, b) =>
                 new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
             )
-            .slice(0, 3);
+            .slice(0, 4);
         }
       }
     },
@@ -72,10 +74,12 @@ export default {
 </script>
 
 <style>
-.blog-item-preview {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
-  grid-column-gap: 1rem;
+@screen lg {
+  .blog-item-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    grid-column-gap: 1rem;
+  }
 }
 </style>
