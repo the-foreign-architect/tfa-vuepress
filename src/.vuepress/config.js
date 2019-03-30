@@ -150,12 +150,28 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['script', { async: true, src: 'https://product-gallery.cloudinary.com/all.js' }],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://use.fontawesome.com/releases/v5.8.1/js/brands.js',
+        integrity: 'sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD',
+        crossorigin: 'anonymous',
+      },
+    ],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js',
+        integrity: 'sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS',
+        crossorigin: 'anonymous',
+      },
+    ],
   ],
-  configureWebpack: (config) => {
+  configureWebpack: config => {
     return {
-      plugins: [
-        new webpack.EnvironmentPlugin({ ...process.env })
-      ]
-    }
-  }
+      plugins: [new webpack.EnvironmentPlugin({ ...process.env })],
+    };
+  },
 };
