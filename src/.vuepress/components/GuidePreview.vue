@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-64 p-4 rounded-sm flex items-center justify-center flex-col shadow hover:shadow-md cursor-pointer"
+    class="h-48 lg:h-64 p-4 mb-4 lg:mb-0 rounded-sm flex items-center justify-center flex-col shadow hover:shadow-md cursor-pointer"
     :style="'background: url('+thumbImageUrl+') center/cover;'"
     @click="$router.push(path)"
   >

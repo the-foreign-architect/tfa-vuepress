@@ -25,35 +25,35 @@
     <div class="flex justify-center text-white mb-4">
       <a
         href="https://twitter.com/theForeignArch"
-        class="text-white shadow-none hover:shadow-none hover:text-grey-light"
+        class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="@theForeignArch on Twitter"
       >
-        <font-awesome-icon :icon="['fab','twitter-square']" size="2x" class="mr-4"></font-awesome-icon>
+        <i class="fab fa-twitter-square fa-2x"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/danrocha/"
-        class="text-white shadow-none hover:shadow-none hover:text-grey-light"
+        class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="Daniel da Rocha on LinkedIn"
       >
-        <font-awesome-icon :icon="['fab','linkedin']" size="2x" class="mr-4"></font-awesome-icon>
+        <i class="fab fa-linkedin fa-2x"></i>
       </a>
       <a
         href="https://www.pinterest.de/theforeignarchitect/pins/"
-        class="text-white shadow-none hover:shadow-none hover:text-grey-light"
+        class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         alt="@theForeignArchitect on Pinterest"
         target="_blank"
       >
-        <font-awesome-icon :icon="['fab','pinterest-square']" size="2x" class="mr-4"></font-awesome-icon>
+        <i class="fab fa-pinterest-square fa-2x"></i>
       </a>
       <a
         href="https://www.instagram.com/danroc/"
-        class="text-white shadow-none hover:shadow-none hover:text-grey-light"
+        class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="@danroc on Instagram"
       >
-        <font-awesome-icon :icon="['fab','instagram']" size="2x" class="mr-4"></font-awesome-icon>
+        <i class="fab fa-instagram fa-2x"></i>
       </a>
     </div>
     <div class="text-white w-full flex justify-center items-center flex-no-shrink">

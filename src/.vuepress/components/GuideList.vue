@@ -104,13 +104,15 @@ export default {
 };
 </script>
 <style>
-.guide-item-preview {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
-  grid-auto-rows: 1fr;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+@screen lg {
+  .guide-item-preview {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
 }
 </style>
 

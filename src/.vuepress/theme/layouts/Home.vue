@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-screen w-full" :style="'background: center / cover no-repeat url('+url+');'">
+    <div class="h-screen w-screen" :style="'background: center / cover no-repeat url('+url+');'">
       <div id="hero" class="p-6 md:p-8 h-full w-full flex items-center">
         <div class="bg-white p-8 rounded-sm shadow">
           <h1
@@ -17,8 +17,8 @@
       </div>
     </div>
     <navbar/>
-    <main role="main" class="container mx-auto bg-white">
-      <div class="px-6 w-full lg:w-2/3 mx-auto pt-8">
+    <main role="main" class="container md:w-full mx-auto md:mx-0 bg-white p-6 md:p-8">
+      <div class="pt-8">
         <home-about :profileImage="data.profileImage"/>
 
         <home-guides :guides="data.guides"/>

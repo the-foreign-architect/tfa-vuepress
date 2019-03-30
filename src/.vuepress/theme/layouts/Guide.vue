@@ -13,19 +13,14 @@
       <Content custom/>
     </main>
 
-    <section class="w-full bg-grey-lightest py-8 mt-8">
-      <div class="container md:w-2/3 mx-auto px-6 md:px-8 flex-grow">
-        <h3 class="mb-4">Share</h3>
-        <social-sharing-container
-          :url="$themeConfig.domain+$page.path"
-          :title="$page.title"
-          :description="$page.excerpt"
-          :hashtags="'architecture,'+$frontmatter.sharingHashtags"
-          twitter-user="theforeignarch"
-          :media="$frontmatter.pinterestMedia"
-        />
-      </div>
-    </section>
+    <social-sharing-container
+      :url="$themeConfig.domain+$page.path"
+      :title="$page.title"
+      :description="$page.excerpt"
+      :hashtags="'architecture,'+$frontmatter.sharingHashtags"
+      twitter-user="theforeignarch"
+      :media="$frontmatter.pinterestMedia"
+    />
 
     <slot name="bottom"/>
   </div>

@@ -1,5 +1,7 @@
 <template>
-  <section class="h-full border border-grey-lighter flex justify-between flex-col pb-4">
+  <section
+    class="h-full border border-grey-lighter flex justify-between flex-col pb-4 mb-4 mx-4 md:mx-0 lg:mb-0"
+  >
     <div>
       <div
         class="h-64 p-2 flex items-start justify-start shadow hover:shadow-md cursor-pointer mb-2"
