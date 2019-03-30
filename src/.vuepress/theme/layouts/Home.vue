@@ -12,6 +12,7 @@
           <a
             href="#guides"
             class="uppercase tracking-wide text-sm inline-block bg-red-dark text-white p-2 rounded-sm shadow-none hover:bg-red-darker hover:shadow-none"
+            aria-label="Go to Guides section in the home page"
           >{{data.actionText}}&nbsp;&darr;</a>
         </div>
       </div>
