@@ -4,7 +4,7 @@ date: 2017-04-09
 type: post
 published: true
 guide: true
-excerpt: A fascinating city where architecture is fresh and the food is delicious.
+excerpt: Lisbon is a wonderful city, home not only to beautiful historic attractions and amazing weather but also to great contemporary architecture.
 tags:
   - Lisbon
   - Portugal
