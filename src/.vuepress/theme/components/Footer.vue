@@ -28,6 +28,8 @@
         class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="@theForeignArch on Twitter"
+        aria-label="Open my profile on Twitter"
+        rel="noopener"
       >
         <i class="fab fa-twitter-square fa-2x"></i>
       </a>
@@ -36,6 +38,8 @@
         class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="Daniel da Rocha on LinkedIn"
+        aria-label="Open my profile on Linkedin"
+        rel="noopener"
       >
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
@@ -44,6 +48,8 @@
         class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         alt="@theForeignArchitect on Pinterest"
         target="_blank"
+        aria-label="Open my profile on Pinterest"
+        rel="noopener"
       >
         <i class="fab fa-pinterest-square fa-2x"></i>
       </a>
@@ -52,6 +58,8 @@
         class="mr-4 text-white shadow-none hover:shadow-none hover:text-grey-light"
         target="_blank"
         alt="@danroc on Instagram"
+        aria-label="Open my profile on Instagram"
+        rel="noopener"
       >
         <i class="fab fa-instagram fa-2x"></i>
       </a>
