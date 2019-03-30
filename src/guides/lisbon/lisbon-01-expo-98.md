@@ -20,7 +20,7 @@ permalink: /guides/:slug
 
 ::: tip
 _This is **Part 1** (of 3) of the **Lisbon Contemporary Architecture Guide**._  
-_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 2**](./lisbon-02-city-center.md) and  [**Part 3**](./lisbon-03-belem.md)._
+_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 2**](./lisbon-02-city-center.md) and [**Part 3**](./lisbon-03-belem.md)._
 :::
 
 The 1998 Lisbon World Expo was remarkable both because of its exhibition’s success as well as for its remaining urban legacy. Built from the ground-up in a derelict area of the city, the Expo managed to create a thriving neighborhood, and its main buildings were kept and continue to be used today. The region was renamed [_Parque da Nações_](http://www.portaldasnacoes.pt/) and developed into a new busy neighborhood.
@@ -33,7 +33,7 @@ Most of these buildings are architecture classics. Calatrava’s Oriente Station
 
 Check the map for this section below ([direct link](https://drive.google.com/open?id=1iYqof3NiQyjRdVXbYSqfK0V5e0U&usp=sharing)); black icons are mentioned in the articles, while gray ones are further recommendations:
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1iYqof3NiQyjRdVXbYSqfK0V5e0U" />
+<guide-map title="Architecture Map of Lisbon - Part 1" map="https://www.google.com/maps/d/u/1/embed?mid=1iYqof3NiQyjRdVXbYSqfK0V5e0U" />
 
 ### Buildings
 
@@ -131,7 +131,7 @@ To reach the Expo site just take any train to the Oriente Station (Gare do Orie
 
 ::: tip
 _This is **Part 1** (of 3) of the **Lisbon Contemporary Architecture Guide**._  
-_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 2**](./lisbon-02-city-center.md) and  [**Part 3**](./lisbon-03-belem.md)._
+_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 2**](./lisbon-02-city-center.md) and [**Part 3**](./lisbon-03-belem.md)._
 :::
 
 <back-to-top/>

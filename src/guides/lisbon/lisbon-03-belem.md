@@ -35,7 +35,7 @@ Otherwise, head back east along the river and drop by the **National Coach Museu
 
 Check the map for this section below ([direct link](https://drive.google.com/open?id=1jSYGUA8MsMypOlW3bwUlqL-eAE8&usp=sharing)); black icons are mentioned in the articles, while gray ones are further recommendations:
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1jSYGUA8MsMypOlW3bwUlqL-eAE8" />
+<guide-map title="Architecture Map of Lisbon - Part 3" map="https://www.google.com/maps/d/u/1/embed?mid=1jSYGUA8MsMypOlW3bwUlqL-eAE8" />
 
 ### Buildings
 

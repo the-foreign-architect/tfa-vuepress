@@ -1,5 +1,5 @@
 <template>
-  <iframe :src="map" width="100%" height="500" class="my-4"></iframe>
+  <iframe :title="title" :src="map" width="100%" height="500" class="my-4"></iframe>
 </template>
 
 <script>
@@ -9,6 +9,10 @@ export default {
     map: {
       type: String,
       required: true,
+    },
+    title: {
+      type: String,
+      default: 'map',
     },
   },
 };

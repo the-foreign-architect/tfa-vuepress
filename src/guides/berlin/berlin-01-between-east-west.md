@@ -35,7 +35,7 @@ While studying in Germany, we had a studio trip to Berlin with one of our profes
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1HYAWN8Skj9UEkNF7FI-MjU8NT5M&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1HYAWN8Skj9UEkNF7FI-MjU8NT5M' />
+<guide-map title="Architecture Map of Berlin - Part 1" map='https://www.google.com/maps/d/u/1/embed?mid=1HYAWN8Skj9UEkNF7FI-MjU8NT5M' />
 
 ### Buildings
 

@@ -37,7 +37,7 @@ Jumping across the Spree once more, we are again on the mainland. Our last build
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1ANzTDcNc0O9SylBe33pf-3eQaZA&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1ANzTDcNc0O9SylBe33pf-3eQaZA&amp;z=14' />
+<guide-map title="Architecture Map of Berlin - Part 4" map='https://www.google.com/maps/d/u/1/embed?mid=1ANzTDcNc0O9SylBe33pf-3eQaZA&amp;z=14' />
 
 ### Buildings
 

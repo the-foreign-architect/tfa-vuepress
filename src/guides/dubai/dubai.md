@@ -46,7 +46,7 @@ I’ll finish with a section on future projects to watch for, including the **Op
 
 There as just so many building in the city, and the map should help you identify any that may catch you eye! Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1JPpBSNdUna6XlTxCHvM0L7l9DNM&usp=sharing)):
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1JPpBSNdUna6XlTxCHvM0L7l9DNM"/>
+<guide-map title="Architecture Map of Dubai" map="https://www.google.com/maps/d/u/1/embed?mid=1JPpBSNdUna6XlTxCHvM0L7l9DNM"/>
 
 ### Buildings
 
@@ -237,4 +237,5 @@ The video above was created by **Rob Whitworth** after three months in Dubai and
 ---
 
 ### Pin it!
+
 <captioned-image alt="TFA's Dubai Contemporary Architecture Guide" caption="TFA's Dubai Contemporary Architecture Guide" imgFile="v1552415588/guides/dubai/TFA-dubai-architecture-guide.jpg"/>

@@ -31,7 +31,7 @@ A Large part of it, however, is reserved for parkland and rural areas, beautiful
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1oCGQZvg5v_xbUMd05YGLIwW6wHQ&usp=sharing)):
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1oCGQZvg5v_xbUMd05YGLIwW6wHQ" />
+<guide-map title="Architecture Map of Hong Kong - Part 1" map="https://www.google.com/maps/d/u/1/embed?mid=1oCGQZvg5v_xbUMd05YGLIwW6wHQ" />
 
 ### Buildings
 

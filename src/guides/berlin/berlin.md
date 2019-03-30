@@ -74,6 +74,6 @@ _coming soon..._
 
 This map contains all buildings mentioned in the chapters above. Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1zJqE432uWcNdaU3MbNVZbAyNrEc&usp=sharing)):
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1zJqE432uWcNdaU3MbNVZbAyNrEc" />
+<guide-map title="Architecture Map of Berlin" map="https://www.google.com/maps/d/u/1/embed?mid=1zJqE432uWcNdaU3MbNVZbAyNrEc" />
 
 <back-to-top />

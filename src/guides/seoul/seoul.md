@@ -41,7 +41,7 @@ After seven years, I finally had the chance to visit Seoul again. It was a short
 
 In the meantime, it should help you get started. Here is the map of everything I mention in the article and more (last updated on May 25th, 2018). Black icons were visited in person and/or are mentioned in the guide below, while gray icons are further recommendations, not necessarily tried or visited.
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1ZZ7l8OA90YvPrS9oxG52e_Mwsxk" />
+<guide-map title="Architecture Map of Seoul" map="https://www.google.com/maps/d/u/1/embed?mid=1ZZ7l8OA90YvPrS9oxG52e_Mwsxk" />
 
 ## Dongdaemun Design Plaza - Zaha Hadid Architects
 

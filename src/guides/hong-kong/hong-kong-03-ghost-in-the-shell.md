@@ -41,7 +41,7 @@ Although the movie inspired this guide, these places are on their own worth a vi
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1eraNHd5mgfLOCrUUa34WPJFy5_k&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1eraNHd5mgfLOCrUUa34WPJFy5_k' />
+<guide-map title="Architecture Map of Hong Kong - Part 3" map='https://www.google.com/maps/d/u/1/embed?mid=1eraNHd5mgfLOCrUUa34WPJFy5_k' />
 
 ### Buildings
 

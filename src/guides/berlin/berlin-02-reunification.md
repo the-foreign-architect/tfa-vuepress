@@ -33,7 +33,7 @@ The second part of the [Berlin Contemporary Architecture Guide](https://theforei
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1tnmdgt3cxfVdvQa2Mib_EnOPvoQ&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1tnmdgt3cxfVdvQa2Mib_EnOPvoQ&amp;z=14' />
+<guide-map title="Architecture Map of Berlin - Part 2" map='https://www.google.com/maps/d/u/1/embed?mid=1tnmdgt3cxfVdvQa2Mib_EnOPvoQ&amp;z=14' />
 
 ### Buildings
 

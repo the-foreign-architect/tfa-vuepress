@@ -31,7 +31,7 @@ So here is the list of all the cool building I saw around Abu Dhabi during my la
 
 Check also the **Architectural Map of Abu Dhabi** on Google Maps.
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1GgHEApxhHbHwIj93FmNCl3QT1Mo"/>
+<guide-map title="Architecture Map of Abu Dhabi" map="https://www.google.com/maps/d/u/1/embed?mid=1GgHEApxhHbHwIj93FmNCl3QT1Mo"/>
 
 ## Capital Gate Tower / RMJM Architects
 

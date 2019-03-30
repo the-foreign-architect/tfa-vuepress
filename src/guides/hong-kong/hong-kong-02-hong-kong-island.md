@@ -33,7 +33,7 @@ Further east and up the mountain, you'll find a little building by **Gehry**, th
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1Wz1_n9ovGb64nm7zpwNG6qn7wRM&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1Wz1_n9ovGb64nm7zpwNG6qn7wRM' />
+<guide-map title="Architecture Map of Hong Kong - Part 2" map='https://www.google.com/maps/d/u/1/embed?mid=1Wz1_n9ovGb64nm7zpwNG6qn7wRM' />
 
 ### Buildings
 

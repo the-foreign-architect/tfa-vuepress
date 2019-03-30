@@ -66,7 +66,7 @@ You can find countless online resources about Lisbon. General travel guides, foo
 
 This is a map of the places mentioned in this guide, and more ([direct link](https://drive.google.com/open?id=1KNQk_F9UYTMJ-Fg6EU8rlljC9fA&usp=sharing)). Each section also has its own map. black icons are mentioned in the articles, while gray ones are further recommendations.
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1KNQk_F9UYTMJ-Fg6EU8rlljC9fA" />
+<guide-map title="Architecture Map of Lisbon" map="https://www.google.com/maps/d/u/1/embed?mid=1KNQk_F9UYTMJ-Fg6EU8rlljC9fA" />
 
 <mc-get-guide-form guide="Lisbon"/>
 

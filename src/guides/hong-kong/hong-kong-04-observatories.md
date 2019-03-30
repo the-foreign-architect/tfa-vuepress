@@ -35,7 +35,7 @@ I visited two of these towers: the Central Plaza, in Wan Chai, and the One Islan
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1KleEl3wbUv3MlmvH_Rln-BdURuA&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1KleEl3wbUv3MlmvH_Rln-BdURuA' />
+<guide-map title="Architecture Map of Hong Kong - Part 4" map='https://www.google.com/maps/d/u/1/embed?mid=1KleEl3wbUv3MlmvH_Rln-BdURuA' />
 
 ### Buildings
 

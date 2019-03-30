@@ -43,7 +43,7 @@ Friedrichstadt is filled with some important buildings completed in the past 30 
 
 Black icons are mentioned in the articles, while gray ones are further recommendations ([direct link](https://drive.google.com/open?id=1-TMB7vl2iwKJzwmenyLKXVhABmw&usp=sharing)):
 
-<guide-map map='https://www.google.com/maps/d/u/1/embed?mid=1tnmdgt3cxfVdvQa2Mib_EnOPvoQ&amp;z=14' />
+<guide-map title="Architecture Map of Berlin - Part 3" map='https://www.google.com/maps/d/u/1/embed?mid=1tnmdgt3cxfVdvQa2Mib_EnOPvoQ&amp;z=14' />
 
 ### Buildings
 

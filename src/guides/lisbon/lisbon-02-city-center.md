@@ -20,7 +20,7 @@ permalink: /guides/:slug
 
 ::: tip
 _This is **Part 2** (of 3) of the **Lisbon Contemporary Architecture Guide**._  
-_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 1**](./lisbon-01-expo-98.md) and  [**Part 3**](./lisbon-03-belem.md)._
+_You can also go back to the [**Intro**](./lisbon.md), or check [**Part 1**](./lisbon-01-expo-98.md) and [**Part 3**](./lisbon-03-belem.md)._
 :::
 
 Lisbon's city center is a joy to get lost in. Do yourself a favor and just walk, no map, no destination. Eat everything that catches your eye and just take the city in. Spend some time soaking your feet in the Tagus, go up some buildings, enjoy some museums, and drink some beers at one of the many terraces overlooking the city. And then get back to your architecture trail.
@@ -31,7 +31,7 @@ The buildings in this section are fewer and more sparsely located than in the [
 
 Check the map for this section below ([direct link](https://www.google.com/maps/d/u/0/viewer?mid=1rgM7_pIaNqe1Mmr4yQhyp7aWTbs&ll=38.73189104344986%2C-9.144950650000055&z=13)); black icons are mentioned in the articles, while gray ones are further recommendations:
 
-<guide-map map="https://www.google.com/maps/d/u/1/embed?mid=1rgM7_pIaNqe1Mmr4yQhyp7aWTbs" />
+<guide-map title="Architecture Map of Lisbon - Part 2" map="https://www.google.com/maps/d/u/1/embed?mid=1rgM7_pIaNqe1Mmr4yQhyp7aWTbs" />
 
 ### Buildings
 
