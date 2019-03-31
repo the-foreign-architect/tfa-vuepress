@@ -1,7 +1,7 @@
 <template>
   <div
     class="h-48 lg:h-64 p-4 mb-4 lg:mb-0 rounded-sm flex items-center justify-center flex-col shadow hover:shadow-md cursor-pointer"
-    :style="'background: url('+thumbImageUrl+') center/cover;'"
+    :style="`background: center / cover no-repeat url(${thumbImageUrl});`"
     @click="$router.push(path)"
   >
     <!-- <time class="blog-post__time">{{ formatPublishDate }}</time> -->
