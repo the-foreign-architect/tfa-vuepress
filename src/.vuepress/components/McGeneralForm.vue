@@ -33,17 +33,14 @@
               >Marketing Permissions - GDPR</label>
               <br>
               <span>Due to GDPR regulations, you need to mark the checkbox below if you agree on receiving emails from me:</span>
-              <fieldset
-                class="flex flex-col justify-start items-center mt-4"
-                name="interestgroup_field"
-              >
+              <fieldset class="mt-4" name="interestgroup_field">
                 <label class="uppercase tracking-wide text-grey-darker text-sm" for="gdpr_15033">
                   <input
                     type="checkbox"
                     id="gdpr_15033"
                     name="gdpr[15033]"
                     value="Y"
-                    class="av-checkbox gdpr"
+                    class="gdpr"
                     checked
                   >
                   <span>Email</span>
