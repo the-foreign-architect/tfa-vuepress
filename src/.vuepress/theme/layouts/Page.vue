@@ -1,10 +1,6 @@
 <template>
   <div class="-mt-16 pt-16 flex-grow">
-    <main
-      id="custom-content"
-      role="main"
-      class="page-content container lg:w-2/3 xl:w-1/2 px-6 md:px-8 mx-auto my-8 flex-grow"
-    >
+    <main id="custom-content" role="main" :class="mainContentClass">
       <Content custom/>
     </main>
 
@@ -23,6 +19,12 @@ import {
 
 export default {
   computed: {
+    mainContentClass() {
+      if (this.$frontmatter.list) {
+        return 'page-content container px-8 mx-auto my-8 flex-grow';
+      }
+      return 'page-content container lg:w-2/3 xl:w-1/2 px-6 md:px-8 mx-auto my-8 flex-grow';
+    },
     lastUpdated() {
       if (this.$page.lastUpdated) {
         return new Date(this.$page.lastUpdated).toLocaleString(this.$lang);
