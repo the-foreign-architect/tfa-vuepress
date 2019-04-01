@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: In this chapter of the Berlin Contemporary Architecture Guide, we are heading east, walking from Unter den Linden, through Museum Island, to Alexanderplatz.
+description: In this chapter of the Berlin Contemporary Architecture Guide, we are heading east, walking from Unter den Linden, through Museum Island, to Alexanderplatz.
 tags:
   - Berlin
   - Germany
