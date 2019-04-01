@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: The Expo ’98 site in Lisbon is home of many contemporary architecture icons, such as Siza’s Portugal Pavilion or Calatrava’s Oriente Station.
+description: The Expo ’98 site in Lisbon is home of many contemporary architecture icons, such as Siza’s Portugal Pavilion or Calatrava’s Oriente Station.
 tags:
   - Lisbon
   - Portugal
