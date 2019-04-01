@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Lisbon is a wonderful city, home not only to beautiful historic attractions and amazing weather but also to great contemporary architecture.
+description: Lisbon is a wonderful city, home not only to beautiful historic attractions and amazing weather but also to great contemporary architecture.
 tags:
   - Lisbon
   - Portugal
