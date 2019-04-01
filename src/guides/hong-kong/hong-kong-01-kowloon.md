@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Kowloon and the New Territories are currently Hong Kong’s largest architecture playground, with new buildings and daring urban development plans such as the New Central Business District in Kowloon East, or the Kowloon West Cultural District.
+description: Kowloon and the New Territories are currently Hong Kong’s largest architecture playground, with new buildings and daring urban development plans such as the New Central Business District in Kowloon East, or the Kowloon West Cultural District.
 tags:
   - Hong Kong
   - China
