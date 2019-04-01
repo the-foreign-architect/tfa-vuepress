@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: An architectural tour through Potsdamer Platz and the Kulturforum, regions which represent the reunification and rebirth of the city.
+description: An architectural tour through Potsdamer Platz and the Kulturforum, regions which represent the reunification and rebirth of the city.
 tags:
   - Berlin
   - Germany
