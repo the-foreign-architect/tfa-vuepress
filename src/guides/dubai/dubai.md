@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Dubai’s architecture is extravagant, excessive, inconsequent and opulent. Despite all that, it is also mind-blowing, impressive, and unique. Go see it.
+description: Dubai’s architecture is extravagant, excessive, inconsequent and opulent. Despite all that, it is also mind-blowing, impressive, and unique. Go see it.
 tags:
   - Dubai
   - City Guide
