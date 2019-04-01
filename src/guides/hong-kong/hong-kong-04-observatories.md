@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: There are several places where you can admire Hong Kong from high up, and these three buildings offer free alternatives to the expensive observation decks.
+description: There are several places where you can admire Hong Kong from high up, and these three buildings offer free alternatives to the expensive observation decks.
 tags:
   - Hong Kong
   - China
