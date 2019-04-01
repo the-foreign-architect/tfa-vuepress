@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Hong Kong is home to exciting new architecture. From Central’s shiny skyscrapers to Kowloon’s sprawling housing blocks, this guide will help you discover and explore it.
+description: Hong Kong is home to exciting new architecture. From Central’s shiny skyscrapers to Kowloon’s sprawling housing blocks, this guide will help you discover and explore it.
 tags:
   - Hong Kong
   - China
