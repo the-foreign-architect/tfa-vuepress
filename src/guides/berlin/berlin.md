@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Berlin has a fascinating history of destruction and rebirth, displayed in the boldness and sheer abundance of great contemporary architecture and urbanism.
+description: Berlin has a fascinating history of destruction and rebirth, displayed in the boldness and sheer abundance of great contemporary architecture and urbanism.
 tags:
   - Berlin
   - Germany
