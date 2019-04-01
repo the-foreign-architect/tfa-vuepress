@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Compressed between the Bay the mountains, the tall and dense Hong Kong Island is full of architectural icons and exciting new buildings.
+description: Compressed between the Bay the mountains, the tall and dense Hong Kong Island is full of architectural icons and exciting new buildings.
 tags:
   - Hong Kong
   - China
