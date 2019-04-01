@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Lisbon’s city center is made of hills and valleys full of history and beautiful sights and these are four contemporary buildings you must visit.
+description: Lisbon’s city center is made of hills and valleys full of history and beautiful sights and these are four contemporary buildings you must visit.
 tags:
   - Lisbon
   - Portugal
