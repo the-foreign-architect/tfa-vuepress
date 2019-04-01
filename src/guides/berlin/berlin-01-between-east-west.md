@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Along the former border between East and West Berlin, close to the heart of the city, you’ll find many examples of great contemporary architecture.
+description: Along the former border between East and West Berlin, close to the heart of the city, you’ll find many examples of great contemporary architecture.
 tags:
   - Berlin
   - Germany
