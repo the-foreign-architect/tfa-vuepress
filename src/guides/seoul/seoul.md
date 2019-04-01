@@ -4,6 +4,7 @@ date: 2017-03-25
 type: post
 published: true
 guide: true
+description: A fascinating city where architecture is fresh and the food is delicious.
 excerpt: A fascinating city where architecture is fresh and the food is delicious.
 tags:
   - Seoul
