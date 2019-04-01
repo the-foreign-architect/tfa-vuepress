@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: I recently had an extended layover in Abu Dhabi and went out to explore the city's must-see new architecture.
+description: I recently had an extended layover in Abu Dhabi and went out to explore the city's must-see new architecture.
 tags:
   - Abu Dhabi
   - City Guide
