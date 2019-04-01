@@ -5,6 +5,7 @@ type: post
 published: true
 guide: true
 excerpt: Lisbon’s Belem is not only egg tarts and old towers. There is great new architecture happening in the area along the river Tagus.
+description: Lisbon’s Belem is not only egg tarts and old towers. There is great new architecture happening in the area along the river Tagus.
 tags:
   - Lisbon
   - Portugal
