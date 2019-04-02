@@ -134,7 +134,7 @@ The idea is interesting. Adding a building that works as an extension to the pub
 
 Try to pass by it on your way to somewhere else, but do not make it a destination. You can reach it easily by subway, Line 1, City Hall Station.
 
-<building-info-container id=23\]
+<building-info-container id=23\>
 
 ### If you get hungry...
 
@@ -152,7 +152,7 @@ In its prominent site right next to the Gyeongbokgung Palace, the MMCA is wonder
 
 A lot of it is freely accessible. The entrance building houses shops, through which you can reach the first courtyard. From there you can take a passageway up all the way to the back of the site, leaving you in the small streets of the Samcheong-ro neighborhood. Due to my short time in the city, I did not get in to check the exhibits. On my to-do list for the next visit. You can reach it by subway via the stations: Anguk (Line 3 - Exit 1),  Gyeongbokgung (Line 3 - Exit 5), or Gwanghwamun (Line 5 - Exit 2).
 
-<building-info-container id=24\]
+<building-info-container id=24\>
 
 ### If you get hungry...
 
@@ -161,8 +161,6 @@ A lot of it is freely accessible. The entrance building houses shops, through wh
 ## Kukje Gallery 3 - SO-IL
 
 The Samcheong-ro neighborhood is very popular in Seoul due to its old-style houses lining up its small streets and alleys, full of cafes, shops, and galleries. Chances are you’ll eventually stumble upon some interesting exhibitions around the area. On my visit, I had a list ready, had reserved a whole morning to do some gallery hopping, only to find them all either closed or changing exhibitions. The Kukje Gallery 3 gathered a lot of attention online when pictures of its simple white body wrapped in a metal fabric made their way into popular architecture websites. So I was curious to go take a peek. Unfortunately, also closed. It is one of three buildings which compose Kukje Gallery, and it was the only one not open. Tucked behind the parking lot of Kukje, it was also quite tricky to find.
-
-<image-gallery tag="lotte-gallery" />
 
 The building is indeed interesting and striking, the metal fabric around it adding a lot to its character, and the volumetry is simple yet intriguing. Another one on my to-do list for the next trip. I’m curious to see how the interior is working, and also how the roof terrace is used.
 
@@ -210,13 +208,13 @@ Seoul’s first super tall, KPF’s Lotte tower is a 555m tall building located 
 
 <captioned-image alt="Lotte World Tower" caption="© Kohn Pedersen Fox Associates PC" imgFile="v1552502135/guides/seoul/Lotte_World_Tower_hero.jpg"/>
 
-\[gallery ids="703,705,707" type="rectangular" link="file"\]
-
 Surrounding it, another gigantic shopping mall, over six floors of shops and restaurants, half of it just for luxury goods. Unless you are into this kind of stuff, just skip it. At first, I thought the tower was only accessible through the mall, for me a huge disappointment. But, to my surprise, it stands mostly free. Instead of approaching it through the mall, you can approach it by the opposite side along a lake, a much more suitable setting for such a scale.
 
 <captioned-image alt="Lotte World Tower" imgFile="v1552502206/guides/seoul/lotte-2.jpg"/>
 
 At the time of my visit, it was still not finished, so no visiting allowed. But I believe its future observatory at almost 500m height will be a must-visit destination in Seoul, competing to the Namsan Tower as the best view in town.
+
+<image-gallery tag="lotte-gallery" />
 
 ### Visit
 
@@ -258,14 +256,6 @@ The tower is a mix of commercial, residential and office. The lower podium conta
   - **[Explore Parts Unknown: Korea](https://explorepartsunknown.com/destination/korea/)** My favorite traveler Anthony Bourdain once did a great episode of his show Parts Unknown in Korea. This is the accompanying article and it is great.
 
 <mc-get-guide-form guide="Seoul"/>
-
----
-
-### Pin it!
-
-<captioned-image alt="TFA's Seoul Contemporary Architecture Guide" caption="TFA's Seoul Contemporary Architecture Guide" imgFile="v1552415993/guides/seoul/TFA-Seoul-architecture-guide.jpg"/>
-
----
 
 ### Work in progress...
 
