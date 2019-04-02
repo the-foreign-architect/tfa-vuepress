@@ -134,7 +134,7 @@ The idea is interesting. Adding a building that works as an extension to the pub
 
 Try to pass by it on your way to somewhere else, but do not make it a destination. You can reach it easily by subway, Line 1, City Hall Station.
 
-<building-info-container id=23\>
+<building-info-container id=23 />
 
 ### If you get hungry...
 
@@ -152,13 +152,15 @@ In its prominent site right next to the Gyeongbokgung Palace, the MMCA is wonder
 
 A lot of it is freely accessible. The entrance building houses shops, through which you can reach the first courtyard. From there you can take a passageway up all the way to the back of the site, leaving you in the small streets of the Samcheong-ro neighborhood. Due to my short time in the city, I did not get in to check the exhibits. On my to-do list for the next visit. You can reach it by subway via the stations: Anguk (Line 3 - Exit 1),  Gyeongbokgung (Line 3 - Exit 5), or Gwanghwamun (Line 5 - Exit 2).
 
-<building-info-container id=24\>
+<building-info-container id=24 />
 
 ### If you get hungry...
 
 ...one of my favorite Mandu restaurants is just beside the Museum. Mandu are Korean dumplings, served alone or in a clear soup, called Manduguk. Just go there and try. They make their dumplings fresh every day and it is delicious ([check the map!](#map)).
 
 ## Kukje Gallery 3 - SO-IL
+
+<captioned-image alt="Kukje Gallery 3 in Seoul" caption="" imgFile="v1554191535/guides/seoul/289256.jpg"/>
 
 The Samcheong-ro neighborhood is very popular in Seoul due to its old-style houses lining up its small streets and alleys, full of cafes, shops, and galleries. Chances are you’ll eventually stumble upon some interesting exhibitions around the area. On my visit, I had a list ready, had reserved a whole morning to do some gallery hopping, only to find them all either closed or changing exhibitions. The Kukje Gallery 3 gathered a lot of attention online when pictures of its simple white body wrapped in a metal fabric made their way into popular architecture websites. So I was curious to go take a peek. Unfortunately, also closed. It is one of three buildings which compose Kukje Gallery, and it was the only one not open. Tucked behind the parking lot of Kukje, it was also quite tricky to find.
 
