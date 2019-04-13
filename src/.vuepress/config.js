@@ -164,8 +164,7 @@ module.exports = {
     ],
     [
       'script', {},
-      `< !--Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-          (function(f, a, t, h, o, m){
+      `(function(f, a, t, h, o, m){
             a[h] = a[h] || function () {
               (a[h].q = a[h].q || []).push(arguments)
             };
@@ -175,8 +174,7 @@ module.exports = {
           m.parentNode.insertBefore(o,m)
         })(document, window, '//stats.theforeignarchitect.com/tracker.js', 'fathom');
         fathom('set', 'siteId', 'JIHKT');
-        fathom('trackPageview');
-      <!-- / Fathom -->`
+        fathom('trackPageview');`
     ]
   ],
   configureWebpack: config => {
