@@ -17,6 +17,9 @@
   from = "/between-east-west-berlin/"
   to = "/guides/berlin-01-between-east-west/"
 [[redirects]]
+  from = "/east-west-berlin/"
+  to = "/guides/berlin-01-between-east-west/"
+[[redirects]]
   from = "/potsdamer-platz-kulturforum-architecture/"
   to = "/guides/berlin-02-reunification/"
 [[redirects]]
