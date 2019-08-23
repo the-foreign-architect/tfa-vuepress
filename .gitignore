@@ -10,3 +10,6 @@ yarn-error.log
 src/guides/*/_imgs/
 /resources
 .env
+# ignore node_modules symlink
+node_modules
+node_modules.nosync
