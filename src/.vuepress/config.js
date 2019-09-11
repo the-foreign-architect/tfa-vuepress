@@ -56,6 +56,12 @@ module.exports = {
         count: 20,
       },
     ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-93498195-1'
+      }
+    ],
     'vuepress-plugin-janitor',
   ],
   head: [

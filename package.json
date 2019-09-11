@@ -35,7 +35,7 @@
     "@babel/core": "^7.3.4",
     "@fullhuman/postcss-purgecss": "^1.1.0",
     "@vuepress/plugin-container": "^1.0.0-alpha.44",
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.33",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "babel-preset-vue": "^2.0.2",
