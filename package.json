@@ -46,7 +46,7 @@
     "postcss-loader": "^3.0.0",
     "tailwindcss": "^0.7.4",
     "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.9",
+    "vue-template-compiler": "^2.6.10",
     "vuepress": "^1.1.0",
     "vuepress-plugin-janitor": "^1.0.0",
     "vuepress-plugin-rss": "^2.0.0",
